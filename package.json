@@ -4,12 +4,9 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "eleventy": "npx @11ty/eleventy"
+    "build": "npx eleventy"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "eleventy": "^1.0.6",
-    "md5": "^2.3.0"
-  }
+  "dependencies": {}
 }
