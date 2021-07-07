@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eleventy": "^1.0.6",
     "md5": "^2.3.0"
   }
 }
