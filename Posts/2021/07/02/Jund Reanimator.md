@@ -24,7 +24,7 @@ description: "A fun artisan deck."
 3 Swamp
 2 Witherbloom Campus
 
-{% enddeck%}
+{% enddeck %}
 
 This week in **Mid-Priced Mayhem** we check out an awesome Jund Reanimator list. This Artisan deck is packed with ways to get creatures into the graveyard then bring them back for value. You'll find threats like <auto-card>Sanctuary Smasher</auto-card>, <auto-card> Krosan Tusker</auto-card>, and <auto-card>Titanoth Rex</auto-card> which are all excellent threats to reanimate, and great value propositions when cycled. You'll get a card and a small effect out of the deal. 
 
