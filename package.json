@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "eleventy": "eleventy"
+    "eleventy": "npx @11ty/eleventy"
   },
   "author": "",
   "license": "ISC",
