@@ -13,6 +13,8 @@ These decks are not designed to be ultra competitive, fast, or efficient decks. 
 
  **For fans of my previous decks you'll not that I have increased the rare count from 6 to 10 and used 4 lands over the previous 2. I had many players comment that they wanted a little more 'oomph' and I still felt this was a fairly budget approach for a wide range of decks*
 
+<!-- Elves -->
+
 {% deck "Elves" %}
 4 Elvish Archdruid
 2 Beast Whisperer
@@ -34,6 +36,8 @@ These decks are not designed to be ultra competitive, fast, or efficient decks. 
 **Elves** is such a fun deck to play. This deck is all about going wide and playing a bunch of creatures. Early game ramp such as <auto-card>Llanowar Elves</auto-card> and <auto-card> Jaspera Sentinel</auto-card> get your plan started early. You'll have no problem playing multiple creatures per turn with powerhouse mana producer <auto-card>Elvish Archdruid</auto-card> on the board. <auto-card>Beast Whisperer</auto-card> ensures you'll always have something to play, often drawing you multiple plays per turn. The ultimate goal of the deck is to ramp into <auto-card>Craterhoof Behemoth</auto-card> for a big aggressive attack. 
 
 You'll find plenty of other great cards in this deck that enable the plan. Incidental card draw and even the ultra affordable <auto-card>Imperious Perfect</auto-card> ensure that you always have something to spend your mana on. 
+
+<!-- Jund Reanimator -->
 
 {% deck "Jund Reanimator" %}
 4 Drakuseth, Maw of Flames
@@ -67,6 +71,8 @@ But it's not a reanimation deck without multiple ways to get those beefy bodies 
 
 Finally a flexible removal package of <auto-card>Binding the Old Gods</auto-card> and <auto-card>Deathsprout</auto-card> both deals with threats and ramps you towards your reanimation spells or hard casting your creatures.
 
+<!-- Boros Equipment -->
+
 {% deck "Boros Equipment" %}
 2 Embercleave
 7 Mountain
@@ -96,3 +102,22 @@ But the deck is more then just a drop your hand aggro deck. You'll have plenty o
 
 A small but aggressive removal package of <auto-card>Shock</auto-card> and <auto-card>Lava Coil</auto-card> keeps the other players honest while you charge in on the offensive. 
 
+<!-- Blink -->
+
+{% deck "Blink" %}
+4 Ephemerate
+8 Swamp
+4 Ravenous Chupacabra
+8 Plains
+4 Thraben Inspector
+2 Wrath of God
+2 Emiel the Blessed
+4 Flicker of Fate
+4 Justiciar's Portal
+4 Omen of the Dead
+4 Dusk Legion Zealot
+4 Burglar Rat
+4 Godless Shrine
+4 Scoured Barrens
+
+{% enddeck %}
