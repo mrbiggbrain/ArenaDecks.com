@@ -121,3 +121,9 @@ A small but aggressive removal package of <auto-card>Shock</auto-card> and <auto
 4 Scoured Barrens
 
 {% enddeck %}
+
+**Blink** focuses on incremental value from ETB effects. The deck includes great targets for creature removal (<auto-card>Ravenous Chupacabra</auto-card>), card draw (<auto-card>Dusk Legion Zealot</auto-card>), and forced discard (<Auto-card>Burglar Rat</auto-card>) plus with 6 flicker spells including a full playset of <auto-card>Ephemerate<auto-card> you'll have plenty of chances to trigger effects at the very best possible time.
+
+The deck also includes <auto-card>Emiel the Blessed</auto-card> which enables some truly wild shenanigans and can easily take over the game when unanswered long enough (Who doesn't like blinking a Burglar Rat just after the opponents draw step.)
+
+This might not be the most powerful deck on the list, but it's super fun if you like two for one exchanges and fizzling your opponents spells or abilities. 
