@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
 
 
     //return output;
-    return `<div class="container"><div class="row"><div class="col-sm-8 text-center" style="padding-right:20px; border-right: 1px solid #ccc;"><auto-card-list preview name="${deckName}">${deckText}</auto-card-list></div><div class="col-sm-4 text-center"><h3>Raw text</h3></hr><pre>${cardText}</pre></div></div><div class="row"><div class="col-sm-12 text-center"><hr /></div></div></div>`;
+    return `<div class="container"><div class="row"><div class="col-sm-12 text-center"><hr /></div></div><div class="row"><div class="col-sm-8 text-center" style="padding-right:20px; border-right: 1px solid #ccc;"><auto-card-list preview name="${deckName}">${deckText}</auto-card-list></div><div class="col-sm-4 text-center"><u><h5>Raw Text</h5></u></hr><pre>${cardText}</pre></div></div><div class="row"><div class="col-sm-12 text-center"><hr /></div></div></div>`;
   });
 
   /* Passthrough Files */

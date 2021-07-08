@@ -127,3 +127,32 @@ A small but aggressive removal package of <auto-card>Shock</auto-card> and <auto
 The deck also includes <auto-card>Emiel the Blessed</auto-card> which enables some truly wild shenanigans and can easily take over the game when unanswered long enough (Who doesn't like blinking a Burglar Rat just after the opponents draw step.)
 
 This might not be the most powerful deck on the list, but it's super fun if you like two for one exchanges and fizzling your opponents spells or abilities. 
+
+<!-- Skeletons -->
+
+{% deck "Skeletons" %}
+
+4 Sanitarium Skeleton
+4 Village Rites
+4 Reassembling Skeleton
+2 Masked Vandal
+4 Death Baron
+2 Bloodline Pretender
+4 Skeleton Archer
+4 Death-Priest of Myrkul
+4 Binding the Old Gods
+2 Skeletal Swarming
+2 Moldervine Reclamation
+2 The Great Henge
+4 Overgrown Tomb
+4 Jungle Hollow
+7 Forest
+7 Swamp
+
+{% enddeck %}
+
+Skeleton Tribal. Yes you heard me, Skeleton Tribal. This deck packs more punch then you might be expecting. With a full 8 lords and plenty of card advantage you'll have no problem chipping in for damage turn after turn. <auto-card>Death Baron</auto-card> is guaranteed to make your opponents blocks less favorable, while <auto-card>Death-Priest of Myrkul</auto-card> is a great way to make sure your always swinging in with your creatures. Finally <auto-card>Skeletal Swarming</auto-card> can overwhelm your opponent very quickly, especially if your creatures are getting death touch. 
+
+<auto-card>Village Rites</auto-card>, <auto-card>Moldervine Reclamation</auto-card>, and <auto-card>The Great Henge</auto-card> ensure your hand is always filled with cards to play and a full suit of recursive threats (<auto-card>Sanitarium Skeleton</auto-card>, <auto-card>Reassembling Skeleton</auto-card>) ensure that you'll always have threats to spend your mana on. 
+
+A small but effective removal package (<auto-card>Binding the Old Gods</auto-card>) makes sure you can deal with a wide range of permeants while serving to move you along towards your plan. 
