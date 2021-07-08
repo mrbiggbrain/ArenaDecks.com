@@ -1,6 +1,7 @@
 ---
 pageTitle: "Historic Starter Decks"
 permalink: "/Starter-Decks-Historic/"
+date: 2021-07-07
 ---
 
 ##### Hello and welcome to the Historic Starter Decks section of the site. The intention of this page is to list decks that have low resource requirements to help enable newer players to get into the incredible format that is Historic. 

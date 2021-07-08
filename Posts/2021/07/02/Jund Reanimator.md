@@ -1,6 +1,7 @@
 ---
 pageTitle: "Mid-Priced Mayhem: Jund Reanimator"
 description: "A fun artisan deck."
+date: 2021-07-02
 ---
 
 
