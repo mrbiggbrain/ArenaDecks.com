@@ -32,11 +32,35 @@ async function shortcode_test(content, deckName)
   return RenderDeckHTML(deck);
 }
 
+// ## Rendering HTML ## //
+
 /* Render the Deck to HTML */
 function RenderDeckHTML(deck)
 {
+  var preview = RenderDeckPreviewHTML(deck);
+  var rawtext = RenderDeckRawTextHTML(deck);
+  return RenderCombinedDeckHTML(preview, rawtext);
+}
+
+/* Render the preview area (Images, etc) */
+function RenderDeckPreviewHTML(deck)
+{
 
 }
+
+/* Render the raw text area (raw text) */
+function RenderDeckRawTextHTML(deck)
+{
+
+}
+
+/* combne the preview and raw text to create the deck view */
+RenderCombinedDeckHTML(preview, rawtext)
+{
+
+}
+
+// ## Parsing Data ## //
 
 /* Parse the deck into an object */
 async function ParseDeck(content)
@@ -51,6 +75,7 @@ async function ParseDeck(content)
   var deck = slots.filter(slot => slot.zone == 'Deck');
   var sideboard = slots.filter(slot => slot.zone == 'Sideboard');
 
+  // Create a deck id based on the hash.
   var id = `deck-${md5(content)}`;
 
   // generate a list of cards from the lines.
