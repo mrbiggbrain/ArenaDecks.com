@@ -1,3 +1,5 @@
+const cheerio = require('cheerio');
+
 module.exports = function(eleventyConfig) {
 
   /* 
