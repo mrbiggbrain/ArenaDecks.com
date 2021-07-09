@@ -34,9 +34,9 @@ These decks are not designed to be ultra competitive, fast, or efficient decks. 
 
 {% enddeck %}
 
-**Elves** is such a fun deck to play. This deck is all about going wide and playing a bunch of creatures. Early game ramp such as <auto-card>Llanowar Elves</auto-card> and <auto-card> Jaspera Sentinel</auto-card> get your plan started early. You'll have no problem playing multiple creatures per turn with powerhouse mana producer <auto-card>Elvish Archdruid</auto-card> on the board. <auto-card>Beast Whisperer</auto-card> ensures you'll always have something to play, often drawing you multiple plays per turn. The ultimate goal of the deck is to ramp into <auto-card>Craterhoof Behemoth</auto-card> for a big aggressive attack. 
+**Elves** is such a fun deck to play. This deck is all about going wide and playing a bunch of creatures. Early game ramp such as {%card%}Llanowar Elves{%endcard%} and {%card%}Jaspera Sentinel{%endcard%} get your plan started early. You'll have no problem playing multiple creatures per turn with powerhouse mana producer {%card%}Elvish Archdruid{%endcard%} on the board. {%card%}Beast Whisperer{%endcard%} ensures you'll always have something to play, often drawing you multiple plays per turn. The ultimate goal of the deck is to ramp into {%card%}Craterhoof Behemoth{%endcard%} for a big aggressive attack. 
 
-You'll find plenty of other great cards in this deck that enable the plan. Incidental card draw and even the ultra affordable <auto-card>Imperious Perfect</auto-card> ensure that you always have something to spend your mana on. 
+You'll find plenty of other great cards in this deck that enable the plan. Incidental card draw and even the ultra affordable {%card%}Imperious Perfect{%endcard%} ensure that you always have something to spend your mana on. 
 
 <!-- Jund Reanimator -->
 
@@ -64,13 +64,13 @@ You'll find plenty of other great cards in this deck that enable the plan. Incid
 
 {% enddeck %}
 
-**Jund Reanimator** is all about cheating big creatures out when your opponent least expects it. No matter if your discarding them with <auto-card>Cathartic Reunion</auto-card> or cycling them away you'll have plenty of big beefy bodies to bring back.
+**Jund Reanimator** is all about cheating big creatures out when your opponent least expects it. No matter if your discarding them with {%card%}Cathartic Reunion{%endcard%} or cycling them away you'll have plenty of big beefy bodies to bring back.
 
-This deck contains some truly big hitters with full playsets of <auto-card>Drakuseth, Maw of Flames</auto-card>,  <auto-card>Titanoth Rex</auto-card>, and <auto-card>Sanctuary Smasher</auto-card> acting as great reanimation targets. 
+This deck contains some truly big hitters with full playsets of {%card%}Drakuseth, Maw of Flames{%endcard%},  {%card%}Titanoth Rex{%endcard%}, and {%card%}Sanctuary Smasher{%endcard%} acting as great reanimation targets. 
 
-But it's not a reanimation deck without multiple ways to get those beefy bodies back. <auto-card>Unbreakable Bond</auto-card> and <auto-card>Bond of Revival</auto-card> act as your standard reanimation spells, while <auto-card>Back for More</auto-card> pulls double duty at instant speed. 
+But it's not a reanimation deck without multiple ways to get those beefy bodies back. {%card%}Unbreakable Bond{%endcard%} and {%card%}Bond of Revival{%endcard%} act as your standard reanimation spells, while {%card%}Back for More{%endcard%} pulls double duty at instant speed. 
 
-Finally a flexible removal package of <auto-card>Binding the Old Gods</auto-card> and <auto-card>Deathsprout</auto-card> both deals with threats and ramps you towards your reanimation spells or hard casting your creatures.
+Finally a flexible removal package of {%card%}Binding the Old Gods{%endcard%} and {%card%}Deathsprout{%endcard%} both deals with threats and ramps you towards your reanimation spells or hard casting your creatures.
 
 <!-- Boros Equipment -->
 
@@ -97,11 +97,11 @@ Finally a flexible removal package of <auto-card>Binding the Old Gods</auto-card
 
 *"BE AGRESSIVE! BE BE AGRESSIVE"*
 
-**Boros Equipment** is a fast and fun aggressive deck that aims to suit up small creatures with equipment synergies to take games over quickly.  From giant bombs like <auto-card>Embercleave</auto-card> or <auto-card>Maul of the Skyclaves</auto-card> to synergistic creatures like <auto-card>Champion of the Flame</auto-card>, <auto-card>Valduk, Keeper of the Flame</auto-card>, or <auto-card>Goblin Gaveleer</auto-card>. 
+**Boros Equipment** is a fast and fun aggressive deck that aims to suit up small creatures with equipment synergies to take games over quickly.  From giant bombs like {%card%}Embercleave{%endcard%} or {%card%}Maul of the Skyclaves{%endcard%} to synergistic creatures like {%card%}Champion of the Flame{%endcard%}, {%card%}Valduk, Keeper of the Flame{%endcard%}, or {%card%}Goblin Gaveleer{%endcard%}. 
 
-But the deck is more then just a drop your hand aggro deck. You'll have plenty of chances to draw cards with <auto-card>Sram, Senior Edificer</auto-card> or <auto-card>Akiri, Fearless Voyager</auto-card> when your empty handed.
+But the deck is more then just a drop your hand aggro deck. You'll have plenty of chances to draw cards with {%card%}Sram, Senior Edificer{%endcard%} or {%card%}Akiri, Fearless Voyager{%endcard%} when your empty handed.
 
-A small but aggressive removal package of <auto-card>Shock</auto-card> and <auto-card>Lava Coil</auto-card> keeps the other players honest while you charge in on the offensive. 
+A small but aggressive removal package of {%card%}Shock{%endcard%} and {%card%}Lava Coil{%endcard%} keeps the other players honest while you charge in on the offensive. 
 
 <!-- Blink -->
 
@@ -123,9 +123,9 @@ A small but aggressive removal package of <auto-card>Shock</auto-card> and <auto
 
 {% enddeck %}
 
-**Blink** focuses on incremental value from ETB effects. The deck includes great targets for creature removal (<auto-card>Ravenous Chupacabra</auto-card>), card draw (<auto-card>Dusk Legion Zealot</auto-card>), and forced discard (<Auto-card>Burglar Rat</auto-card>) plus with 6 flicker spells including a full playset of <auto-card>Ephemerate<auto-card> you'll have plenty of chances to trigger effects at the very best possible time.
+**Blink** focuses on incremental value from ETB effects. The deck includes great targets for creature removal ({%card%}Ravenous Chupacabra{%endcard%}), card draw ({%card%}Dusk Legion Zealot{%endcard%}), and forced discard ({%card%}Burglar Rat{%endcard%}) plus with 6 flicker spells including a full playset of {%card%}Ephemerate{%endcard%} you'll have plenty of chances to trigger effects at the very best possible time.
 
-The deck also includes <auto-card>Emiel the Blessed</auto-card> which enables some truly wild shenanigans and can easily take over the game when unanswered long enough (Who doesn't like blinking a Burglar Rat just after the opponents draw step.)
+The deck also includes {%card%}Emiel the Blessed{%endcard%} which enables some truly wild shenanigans and can easily take over the game when unanswered long enough (Who doesn't like blinking a Burglar Rat just after the opponents draw step.)
 
 This might not be the most powerful deck on the list, but it's super fun if you like two for one exchanges and fizzling your opponents spells or abilities. 
 
@@ -152,8 +152,8 @@ This might not be the most powerful deck on the list, but it's super fun if you 
 
 {% enddeck %}
 
-Skeleton Tribal. Yes you heard me, Skeleton Tribal. This deck packs more punch then you might be expecting. With a full 8 lords and plenty of card advantage you'll have no problem chipping in for damage turn after turn. <auto-card>Death Baron</auto-card> is guaranteed to make your opponents blocks less favorable, while <auto-card>Death-Priest of Myrkul</auto-card> is a great way to make sure your always swinging in with your creatures. Finally <auto-card>Skeletal Swarming</auto-card> can overwhelm your opponent very quickly, especially if your creatures are getting death touch. 
+Skeleton Tribal. Yes you heard me, Skeleton Tribal. This deck packs more punch then you might be expecting. With a full 8 lords and plenty of card advantage you'll have no problem chipping in for damage turn after turn. {%card%}Death Baron{%endcard%} is guaranteed to make your opponents blocks less favorable, while {%card%}Death-Priest of Myrkul{%endcard%} is a great way to make sure your always swinging in with your creatures. Finally {%card%}Skeletal Swarming{%endcard%} can overwhelm your opponent very quickly, especially if your creatures are getting death touch. 
 
-<auto-card>Village Rites</auto-card>, <auto-card>Moldervine Reclamation</auto-card>, and <auto-card>The Great Henge</auto-card> ensure your hand is always filled with cards to play and a full suit of recursive threats (<auto-card>Sanitarium Skeleton</auto-card>, <auto-card>Reassembling Skeleton</auto-card>) ensure that you'll always have threats to spend your mana on. 
+{%card%}Village Rites{%endcard%}, {%card%}Moldervine Reclamation{%endcard%}, and {%card%}The Great Henge{%endcard%} ensure your hand is always filled with cards to play and a full suit of recursive threats ({%card%}Sanitarium Skeleton{%endcard%}, {%card%}Reassembling Skeleton{%endcard%}) ensure that you'll always have threats to spend your mana on. 
 
-A small but effective removal package (<auto-card>Binding the Old Gods</auto-card>) makes sure you can deal with a wide range of permeants while serving to move you along towards your plan. 
+A small but effective removal package ({%card%}Binding the Old Gods{%endcard%}) makes sure you can deal with a wide range of permeants while serving to move you along towards your plan. 

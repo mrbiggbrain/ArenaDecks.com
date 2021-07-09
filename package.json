@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "cheerio": "^1.0.0-rc.10"
+    "cheerio": "^1.0.0-rc.10",
+    "md5": "^2.3.0",
+    "node-fetch": "^2.6.1"
   }
 }
