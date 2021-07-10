@@ -34,7 +34,13 @@ function Search()
       index.addDoc(item)
     });
 
-    var results = index.search(searchterm)
+    var results = index.search(searchterm, {
+      fields: {
+        title: {boost: 3},
+        description: {boost: 1}
+      },
+      expand: true
+    });
 
 
     // Clear the results. 
