@@ -7,6 +7,7 @@ date: 2021-07-02
 
 
 {% test "Reanimator" %}
+Deck
 4 Mire Triton
 4 Carrion Grub
 4 Sanctuary Smasher
@@ -26,7 +27,6 @@ date: 2021-07-02
 2 Witherbloom Campus
 
 Sideboard
-
 4 Swamp
 
 {% endtest %}
