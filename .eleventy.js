@@ -9,15 +9,15 @@ module.exports = function(eleventyConfig) {
    */
   eleventyConfig.addPairedLiquidShortcode("deck", shortcode_deck);
 
-  eleventyConfig.addPairedLiquidShortcode("card", function(content){
-    return `<auto-card>${content}</auto-card>`;
-  });
+  eleventyConfig.addPairedLiquidShortcode("card", shortcode_card);
 
   /* Testing new deck builder */
   eleventyConfig.addPairedLiquidShortcode("test", shortcode_deck);
 
   /* Passthrough Files */
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("css");
 }
 
 /* Used for testing */
@@ -28,6 +28,14 @@ async function shortcode_deck(content, deckName)
 
   // Render and return the HTML making up the deck area.
   return RenderDeckHTML(deckName, deck);
+}
+
+async function shortcode_card(content)
+{
+  let card = await FetchCardFromScryfall(content);
+
+  return `<a href="${card.scryfall_uri}" data-bs-toggle="tooltip" data-bs-html="true" style="opacity:1!important;" title="<img  src='${card.image_uris.small}' />">${content}</a>`;
+
 }
 
 // ## Rendering HTML ## //
@@ -44,7 +52,7 @@ function RenderDeckHTML(deckName, deck)
 
   let links_col = `<div class="container">${commander_outline} ${deck_outline} ${sideboard_outline}</div>`;
 
-  let image_col = `<image class="img-fluid" src="/js/Magic_card_back.jpg" data-deck-name="${deck.id}" />`;
+  let image_col = `<image class="img-fluid" src="/img/Magic_card_back.jpg" data-deck-name="${deck.id}" />`;
 
 
   let left_root_cols = `<div class="col-4">${image_col}</div><div class="col-8">${links_col}</div>`;

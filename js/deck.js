@@ -2,6 +2,7 @@
 $( document ).ready(function() {
   // Attach
   AttachImageEvents();
+  AttachTooltipEvents();
 });
 
 function AttachImageEvents()
@@ -12,4 +13,14 @@ function AttachImageEvents()
 
     $(`img[data-deck-name="${deck_id}"]`).attr("src", deck_image);
   });
+}
+
+function AttachTooltipEvents()
+{
+  $(function () {
+    $('[data-bs-toggle="tooltip"]').tooltip({
+      animated: 'fade',
+      html: true
+    });
+  })
 }
