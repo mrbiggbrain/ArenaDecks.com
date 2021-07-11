@@ -6,7 +6,7 @@ date: 2021-07-02
 
 
 
-{% test "Reanimator" %}
+{% deck "Reanimator" %}
 Deck
 4 Mire Triton
 4 Carrion Grub
@@ -29,14 +29,14 @@ Deck
 Sideboard
 4 Swamp
 
-{% endtest %}
+{% enddeck %}
 
-This week in **Mid-Priced Mayhem** we check out an awesome Jund Reanimator list. This Artisan deck is packed with ways to get creatures into the graveyard then bring them back for value. You'll find threats like <auto-card>Sanctuary Smasher</auto-card>, <auto-card> Krosan Tusker</auto-card>, and <auto-card>Titanoth Rex</auto-card> which are all excellent threats to reanimate, and great value propositions when cycled. You'll get a card and a small effect out of the deal. 
+This week in **Mid-Priced Mayhem** we check out an awesome Jund Reanimator list. This Artisan deck is packed with ways to get creatures into the graveyard then bring them back for value. You'll find threats like {% card %}Sanctuary Smasher{% endcard %}, {% card %} Krosan Tusker{% endcard %}, and {% card %}Titanoth Rex{% endcard %} which are all excellent threats to reanimate, and great value propositions when cycled. You'll get a card and a small effect out of the deal. 
 
-A small plain removal package of <auto-card>Heartless Act</auto-card> ensures you can deal with creature based threats long enough to reanimate your bigger threats, and <auto-card>Back for More</auto-card> can create some really vicious swings as you block one creature, fight a second creature, and swing in for huge damage the next turn. 
+A small plain removal package of {% card %}Heartless Act{% endcard %} ensures you can deal with creature based threats long enough to reanimate your bigger threats, and {% card %}Back for More{% endcard %} can create some really vicious swings as you block one creature, fight a second creature, and swing in for huge damage the next turn. 
 
-But cycling is not the only way this deck has to get cards into the graveyard, you'll find a small but potent self mill package in <auto-card>Mire Triton</auto-card> and <auto-card>Carrion Grub</auto-card> who doubles as an excellent threat when needed. Finally you'll find a few <auto-card>Cathartic Reunion</auto-card> to help get useless cards out of your hand and find your reanimation spells. 
+But cycling is not the only way this deck has to get cards into the graveyard, you'll find a small but potent self mill package in {% card %}Mire Triton{% endcard %} and {% card %}Carrion Grub{% endcard %} who doubles as an excellent threat when needed. Finally you'll find a few {% card %}Cathartic Reunion{% endcard %} to help get useless cards out of your hand and find your reanimation spells. 
 
-You'll find no trouble getting creatures back from the graveyard with full playsets of <auto-card>Unbreakable Bond</auto-card> and <auto-card>Back for More</auto-card>, who can smash in quickly due to the two copies of <auto-card>Rhythm of the Wild</auto-card>.
+You'll find no trouble getting creatures back from the graveyard with full playsets of {% card %}Unbreakable Bond{% endcard %} and {% card %}Back for More{% endcard %}, who can smash in quickly due to the two copies of {% card %}Rhythm of the Wild{% endcard %}.
 
 The deck is a super fun, off meta way to enjoy this or future artisan events. I hope you enjoyed this deck, I'll be sure to add plenty more in the future. 

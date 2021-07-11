@@ -3,6 +3,7 @@ $( document ).ready(function() {
   // Attach
   AttachImageEvents();
   AttachTooltipEvents();
+  AttachWildcardEvents();
 });
 
 function AttachImageEvents()
@@ -17,10 +18,36 @@ function AttachImageEvents()
 
 function AttachTooltipEvents()
 {
-  $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip({
-      animated: 'fade',
-      html: true
-    });
-  })
+  $('[data-bs-toggle="tooltip"]').tooltip({
+    animated: 'fade',
+    html: true
+  });
+}
+
+function AttachWildcardEvents()
+{
+  $('div[data-card-rarity]').hover(
+  function(){ // Hover On
+
+    console.log("Fires");
+
+    let name = $(this).attr("data-deck-name");
+    let rarity = $(this).attr("data-card-rarity");
+    var color = "Gray";
+
+    if(rarity == "mythic") color = "Orange";
+    if(rarity == "rare") color = "Gold";
+    if(rarity == "uncommon") color = "Silver";
+
+    // get all the marching links
+    $(`A[data-deck-name='${name}'][data-card-rarity='${rarity}']`).css({"background-color": color});
+
+
+  },
+  function(){ // Hover Off
+    let name = $(this).attr("data-deck-name");
+    let rarity = $(this).attr("data-card-rarity");
+
+    $(`A[data-deck-name='${name}'][data-card-rarity='${rarity}']`).css({"background-color": ""});
+  });
 }
