@@ -334,10 +334,7 @@ async function FetchCardFromScryfall(name)
         _image_uris = details.image_uris;
       }
 
-      console.log(`Name: ${_name} type ${typeof details.cardfaces}`);
-      //console.log(_image_uris);
-
-      return {name: _name, image_uris: _image_uris, rarity: details.rarity}
+      return {name: _name, image_uris: _image_uris, rarity: details.rarity, scryfall_uri: details.scryfall_uri}
 }
 
 
