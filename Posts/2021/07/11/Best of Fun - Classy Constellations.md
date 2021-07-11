@@ -1,5 +1,5 @@
 ---
-pageTitle: "Standard Fare: Classy Constellations"
+pageTitle: "Best of Fun: Classy Constellations"
 description: "A fun artisan deck."
 date: 2021-07-11
 ---
