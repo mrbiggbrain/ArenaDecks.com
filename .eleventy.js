@@ -2,6 +2,9 @@ const cheerio = require('cheerio');
 const fetch = require('node-fetch');
 const md5 = require('md5');
 const fs = require('fs');
+const liquid = require('liquidjs');
+
+var engine = new Liquid();
 
 module.exports = function(eleventyConfig) {
 
@@ -310,6 +313,9 @@ async function FetchCardFromScryfall(name)
 {
   const response = await fetch(`https://api.scryfall.com/cards/named?exact=${name}&unique=cards&game=arena`);
       var body = await response.text();
+
+      //console.log(body);
+
       var details = JSON.parse(body);
 
       var overrides = JSON.parse(fs.readFileSync('_data/card_override.json'));
