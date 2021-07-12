@@ -3,7 +3,7 @@ pageTitle: "Testing"
 date: 2021-07-11
 ---
 
-{% deck "Dungeon Combo" %}
+{% test "Dungeon Combo" %}
 
 Deck
 3 Acererak the Archlich
@@ -27,4 +27,4 @@ Deck
 1 Swamp
 2 Gaea's Blessing
 
-{% enddeck %}
+{% endtest %}
