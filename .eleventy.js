@@ -2,8 +2,9 @@ const cheerio = require('cheerio');
 const fetch = require('node-fetch');
 const md5 = require('md5');
 const fs = require('fs');
-const liquid = require('liquidjs');
+var {Liquid} = require('liquidjs');
 
+// We are going to use Liquid templates! yay!
 var engine = new Liquid();
 
 module.exports = function(eleventyConfig) {
@@ -16,7 +17,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPairedLiquidShortcode("card", shortcode_card);
 
   /* Testing new deck builder */
-  eleventyConfig.addPairedLiquidShortcode("test", shortcode_deck);
+  eleventyConfig.addPairedLiquidShortcode("test", shortcode_test);
 
   /* Passthrough Files */
   eleventyConfig.addPassthroughCopy("js");
@@ -24,7 +25,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
 }
 
-/* Used for testing */
 async function shortcode_deck(content, deckName)
 {
   // Parse the content of the tag to get a functioning deck.
@@ -40,6 +40,16 @@ async function shortcode_card(content)
 
   return `<a href="${card.scryfall_uri}" data-bs-toggle="tooltip" data-bs-html="true" title="<img  src='${card.image_uris.small}' />">${content}</a>`;
 
+}
+
+async function shortcode_test(content, deckname)
+{
+  // Parse the content of the tag to get a functioning deck.
+  var deck = await ParseDeck(content);
+
+  var template = fs.readFileSync("./_includes/deck.liquid").toString('utf-8');
+
+  return engine.parseAndRender(template, deck);
 }
 
 // ## Rendering HTML ## //
