@@ -38,17 +38,21 @@ async function shortcode_deck(content, deckname)
 
   var template = fs.readFileSync("./_includes/deck.html").toString('utf-8');
 
-  var gates = { commander: deck.zones.commander.length > 0, 
-                companion: deck.zones.companion.length > 0,
-                deck: deck.zones.deck.length > 0,
-                sideboard: deck.zones.sideboard.length > 0
-              };
+  var gates = { 
+    commander: deck.zones.commander.length > 0, 
+    companion: deck.zones.companion.length > 0,
+    deck: deck.zones.deck.length > 0,
+    sideboard: deck.zones.sideboard.length > 0
+  };
 
-  console.log(gates);
+  var cardcount = {
+    commander: CardsToCount(deck.zones.commander),
+    companion: CardsToCount(deck.zones.companion),
+    deck: CardsToCount(deck.zones.deck),
+    sideboard: CardsToCount(deck.zones.sideboard)
+  }
 
-  var html = await engine.parseAndRender(template, {deck: deck, wildcards: wildcards, name: deckname, gates: gates });
-
-  console.log(Outdent(html));
+  var html = await engine.parseAndRender(template, {deck: deck, wildcards: wildcards, name: deckname, gates: gates, cardcount: cardcount });
 
   return Outdent(html);
 }

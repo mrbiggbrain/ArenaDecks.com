@@ -9,7 +9,7 @@
 <div class="row">
   <!-- Preview View -->
   <div class="col-sm-8 text-center" style="padding-right:20px; border-right: 1px solid #ccc;">
-    <h3>{{ deck.name }}</h3>
+    <h3>{{ name }}</h3>
     <hr>
     <div class="container">
       <div class="row">
@@ -21,7 +21,7 @@
             {% if gates.commander %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Deck ({{ deck.zones.commander | size }})</b>
+                <b>Deck ({{ cardcount.commander }})</b>
                 <hr>
               </div>
             </div>
@@ -45,7 +45,7 @@
             {% if gates.companion %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Companion ({{ deck.zones.companion | size }})</b>
+                <b>Companion ({{ cardcount.companion }})</b>
                 <hr>
               </div>
             </div>
@@ -69,7 +69,7 @@
             {% if gates.deck %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Deck ({{ deck.zones.deck | size }})</b>
+                <b>Deck ({{ cardcount.deck }})</b>
                 <hr>
               </div>
             </div>
@@ -93,7 +93,7 @@
             {% if gates.sideboard %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Deck ({{ deck.zones.sideboard | size }})</b>
+                <b>Deck ({{ cardcount.sideboard }})</b>
                 <hr>
               </div>
             </div>
