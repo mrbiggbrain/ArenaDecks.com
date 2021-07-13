@@ -2,7 +2,7 @@
 
 ## Build Status
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/c14c66c0-29db-4420-be30-175fe9c06716/deploy-status)](https://app.netlify.com/sites/sharp-hopper-b51d84/deploys)
+![Netlify Status](https://api.netlify.com/api/v1/badges/c14c66c0-29db-4420-be30-175fe9c06716/deploy-status)
 
 ## Live View
 
