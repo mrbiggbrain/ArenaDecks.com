@@ -4,6 +4,8 @@ const md5 = require('md5');
 const fs = require('fs');
 var {Liquid} = require('liquidjs');
 
+var FetchDB = LoadFetchDB();
+
 // We are going to use Liquid templates! yay!
 var engine = new Liquid();
 
@@ -214,39 +216,91 @@ function CardsToCount(cards)
 
 // ## Data Fetching ##//
 
+// Sets up a simple map for search optimization.
+function LoadFetchDB()
+{
+  let db = new Map();
+
+  var files = fs.readdirSync('_data/fetchdb/');
+
+  for(let file of files)
+  {
+    let data = JSON.parse(fs.readFileSync(`_data/fetchdb/${file}`));
+    let _name_ = null;
+
+    if(data.hasOwnProperty('card_faces')) // Double Sided
+    {
+      _name_ = data.card_faces[0].name;
+    }
+    else
+    {
+      _name_ = data.name;
+    }
+    
+    db.set(_name_.toLowerCase(), data);
+  }
+
+  return db;
+}
+
 /* Fetches data from scryfall */
 async function FetchCardFromScryfall(name)
 {
-  const response = await fetch(`https://api.scryfall.com/cards/named?exact=${name}&unique=cards&game=arena`);
-      var body = await response.text();
 
-      //console.log(body);
+  var details = null;
 
-      var details = JSON.parse(body);
+  if(FetchDB.has(name.trim().toLowerCase()))
+  {
+    details = FetchDB.get(name.trim().toLowerCase());
+  }
+  else
+  {
+    console.log(`Fetched ${name} from scryfall (No local cache)`);
+    const response = await fetch(`https://api.scryfall.com/cards/named?exact=${name}&unique=cards&game=arena`);
+    var body = await response.text();
 
-      var overrides = JSON.parse(fs.readFileSync('_data/card_override.json'));
+    details = JSON.parse(body);
 
-      let override = overrides.find(x => x.name === name);
+    if(details.hasOwnProperty('card_faces')) // Double Sided
+    {
+      _name_ = details.card_faces[0].name;
+    }
+    else
+    {
+      _name_ = details.name;
+    }
 
-      if(override)
-      {
-        details.rarity = override.rarity;
-      }
+    FetchDB.set(_name_.toLowerCase(), details)
 
-      let _name =  null;
-      let _image_uris = null;
-      if(details.hasOwnProperty('card_faces')) // Double Sided
-      {
-        _name = details.card_faces[0].name;
-        _image_uris = details.card_faces[0].image_uris;
-      }
-      else
-      {
-        _name = details.name;
-        _image_uris = details.image_uris;
-      }
+    fs.writeFile(`_data/fetchdb/${details.id}.json`, JSON.stringify(details), function (err, result){
 
-      return {name: _name, image_uris: _image_uris, rarity: details.rarity, scryfall_uri: details.scryfall_uri}
+    });
+  }
+
+  var overrides = JSON.parse(fs.readFileSync('_data/card_override.json'));
+
+  let override = overrides.find(x => x.name === name);
+
+  if(override)
+  {
+    details.rarity = override.rarity;
+  }
+
+  let _name =  null;
+  let _image_uris = null;
+
+  if(details.hasOwnProperty('card_faces')) // Double Sided
+  {
+    _name = details.card_faces[0].name;
+    _image_uris = details.card_faces[0].image_uris;
+  }
+  else
+  {
+    _name = details.name;
+    _image_uris = details.image_uris;
+  }
+
+  return {name: _name, image_uris: _image_uris, rarity: details.rarity, scryfall_uri: details.scryfall_uri}
 }
 
 

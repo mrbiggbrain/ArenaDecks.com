@@ -26,6 +26,8 @@ function AttachTooltipEvents()
 
 function AttachWildcardEvents()
 {
+
+  /* Hover Effects */
   $('div[data-card-rarity]').hover(
   function(){ // Hover On
 
@@ -50,4 +52,6 @@ function AttachWildcardEvents()
 
     $(`A[data-deck-name='${name}'][data-card-rarity='${rarity}']`).css({"background-color": ""});
   });
+
+
 }
