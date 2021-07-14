@@ -13,10 +13,10 @@
     <hr>
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-sm-4 d-none d-sm-block">
           <img class="img-fluid" src="/img/Magic_card_back.jpg" data-deck-name="{{ deck.id }}">
         </div>
-        <div class="col-8">
+        <div class="col-sm-8">
           <div class="container">
             {% if gates.commander %}
             <div class="row">
@@ -31,7 +31,7 @@
                   <div class="row">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.commander %}
-                    <div class="col-6">
+                    <div class="col-md-6">
                       {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
@@ -55,7 +55,7 @@
                   <div class="row">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.companion %}
-                    <div class="col-6">
+                    <div class="col-md-6">
                       {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
@@ -79,7 +79,7 @@
                   <div class="row">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.deck %}
-                    <div class="col-6">
+                    <div class="col-md-6">
                       {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
@@ -103,7 +103,7 @@
                   <div class="row">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.sideboard %}
-                    <div class="col-6">
+                    <div class="col-md-6">
                       {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
@@ -159,6 +159,7 @@
   </div>
   <!-- Raw View -->
   <div class="col-sm-4 text-center">
+    <hr class="d-sm-none" />
     <h3>Raw Text</h3>
     <hr>
     <pre>
