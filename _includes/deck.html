@@ -11,7 +11,7 @@
   <div class="col-sm-8 text-center" style="padding-right:20px; border-right: 1px solid #ccc;">
     <h3>{{ name }}</h3>
     <hr>
-    <div class="container">
+    <!-- <div class="container"> -->
       <div class="row">
         <div class="col-sm-4 d-none d-sm-block">
           <img class="img-fluid" src="/img/Magic_card_back.jpg" data-deck-name="{{ deck.id }}">
@@ -28,7 +28,7 @@
             <div class="row">
               <div class="col-12 text-start">
                 <div class=container">
-                  <div class="row">
+                  <div class="row gx-1">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.commander %}
                     <div class="col-md-6">
@@ -52,7 +52,7 @@
             <div class="row">
               <div class="col-12 text-start">
                 <div class=container">
-                  <div class="row">
+                  <div class="row gx-1">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.companion %}
                     <div class="col-md-6">
@@ -76,7 +76,7 @@
             <div class="row">
               <div class="col-12 text-start">
                 <div class=container">
-                  <div class="row">
+                  <div class="row gx-1">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.deck %}
                     <div class="col-md-6">
@@ -100,7 +100,7 @@
             <div class="row">
               <div class="col-12 text-start">
                 <div class=container">
-                  <div class="row">
+                  <div class="row gx-1">
                     <!-- Loop through cards -->
                     {% for card in deck.zones.sideboard %}
                     <div class="col-md-6">
@@ -155,7 +155,7 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
   <!-- Raw View -->
   <div class="col-sm-4 text-center">
