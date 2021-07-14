@@ -34,6 +34,8 @@ async function shortcode_card(content)
 
 async function shortcode_deck(content, deckname)
 {
+  console.log(`Processing Deck: ${deckname}`);
+
   // Parse the content of the tag to get a functioning deck.
   var deck = await ParseDeck(content);
   var wildcards = GetWildcards(deck);
@@ -75,12 +77,13 @@ async function ParseDeck(content)
   var sideboard = slots.filter(slot => slot.zone == 'Sideboard');
   var companion = slots.filter(slot => slot.zone == 'Companion');
   var raw = GetRawText(commander, deck, sideboard, companion);
+  var colors = ParseColors(slots);
 
   // Create a deck id based on the hash.
   var id = `deck-${md5(content)}`;
 
   // generate a list of cards from the lines.
-  return {id: id, zones: {commander: commander, deck: deck, sideboard: sideboard, companion: companion}, raw: raw};
+  return {id: id, zones: {commander: commander, deck: deck, sideboard: sideboard, companion: companion}, raw: raw, colors: colors};
 }
 
 function GetRawText(commander, deck, sideboard, companion)
@@ -214,6 +217,25 @@ function CardsToCount(cards)
   return total;
 }
 
+function ParseColors(slots)
+{
+  
+  let colors = {white: false, blue: false, black: false, red: false, green: false}
+
+  for(slot of slots)
+  {
+    colors = {
+      white: colors.white || slot.details.colors.includes("W"),
+      blue: colors.blue || slot.details.colors.includes("U"),
+      black: colors.black || slot.details.colors.includes("B"),
+      red: colors.red || slot.details.colors.includes("R"),
+      green: colors.green || slot.details.colors.includes("G")
+    };
+  }
+
+  return colors;
+}
+
 // ## Data Fetching ##//
 
 // Sets up a simple map for search optimization.
@@ -293,14 +315,16 @@ async function FetchCardFromScryfall(name)
   {
     _name = details.card_faces[0].name;
     _image_uris = details.card_faces[0].image_uris;
+    _colors = details.card_faces[0].colors.concat(details.card_faces[1]);
   }
   else
   {
     _name = details.name;
     _image_uris = details.image_uris;
+    _colors = details.colors;
   }
 
-  return {name: _name, image_uris: _image_uris, rarity: details.rarity, scryfall_uri: details.scryfall_uri}
+  return {name: _name, image_uris: _image_uris, rarity: details.rarity, scryfall_uri: details.scryfall_uri, colors: _colors}
 }
 
 

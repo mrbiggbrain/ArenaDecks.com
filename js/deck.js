@@ -4,6 +4,7 @@ $( document ).ready(function() {
   AttachImageEvents();
   AttachTooltipEvents();
   AttachWildcardEvents();
+  AttachColorEvents();
 });
 
 function AttachImageEvents()
@@ -54,4 +55,36 @@ function AttachWildcardEvents()
   });
 
 
+}
+
+function AttachColorEvents()
+{
+  $(`i[data-search-color]`).hover(
+    function(){ // Hover On
+      let color = $(this).attr(`data-search-color`);
+      let id = $(this).attr(`data-deck-name`);
+
+      let highlight = "";
+
+      if(color == "W") highlight = "#FFEBCD";
+      if(color == "U") highlight = "#00BFFF";
+      if(color == "B") highlight = "#A9A9A9";
+      if(color == "R") highlight = "#DC143C";
+      if(color == "G") highlight = "#8FBC8F";
+
+      //$(`a[data-card-colors="*${color}*"]`).css({"background-color": highlight});
+      $(`a[data-card-colors][data-deck-name="${id}"]`).each(function(){
+
+        console.log(`yes`);
+        let cardcolors = $(this).attr(`data-card-colors`);
+        if(cardcolors.includes(color)) $(this).css({"background-color": highlight});
+      });
+    },
+    function(){ // Hover Off
+
+      let color = $(this).attr(`data-search-color`);
+      let id = $(this).attr(`data-deck-name`);
+      $(`a[data-card-colors][data-deck-name="${id}"]`).css({"background-color": ''});
+    }
+  )
 }
