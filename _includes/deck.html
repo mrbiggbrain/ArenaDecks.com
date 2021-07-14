@@ -10,6 +10,10 @@
   <!-- Preview View -->
   <div class="col-sm-8 text-center" style="padding-right:20px; border-right: 1px solid #ccc;">
     <h3>{{ name }}</h3>
+    <div>
+      {%if deck.colors.white %}<i class="ms ms-w ms-cost" data-deck-name="{{deck.id}}" data-search-color="W"></i>{%endif%} {%if deck.colors.blue %}<i class="ms ms-u ms-cost" data-deck-name="{{deck.id}}" data-search-color="U"></i>{%endif%} {%if deck.colors.black %}<i class="ms ms-b ms-cost" data-deck-name="{{deck.id}}" data-search-color="B"></i>{%endif%} {%if deck.colors.red %}<i class="ms ms-r ms-cost" data-deck-name="{{deck.id}}" data-search-color="R"></i>{%endif%} {%if deck.colors.green %}<i class="ms ms-g ms-cost" data-deck-name="{{deck.id}}" data-search-color="G"></i>{%endif%}
+    </div>
+    
     <hr>
     <div class="container">
       <div class="row">
@@ -80,7 +84,7 @@
                     <!-- Loop through cards -->
                     {% for card in deck.zones.deck %}
                     <div class="col-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
@@ -113,7 +117,7 @@
             </div>
             {% endif %}
 
-            <div class="row">
+            <div class="row ">
               <div class="col-12 py-0">
                 <hr>
               </div>
@@ -160,8 +164,9 @@
   <!-- Raw View -->
   <div class="col-sm-4 text-center">
     <h3>Raw Text</h3>
+    <br />
     <hr>
-    <pre>
+    <pre data-deck-name="{{deck.id}}">
       {{deck.raw}}
     </pre>
   </div>
