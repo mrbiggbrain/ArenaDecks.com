@@ -5,6 +5,7 @@ $( document ).ready(function() {
   AttachTooltipEvents();
   AttachWildcardEvents();
   AttachColorEvents();
+  AttachCopyEvents();
 });
 
 function AttachImageEvents()
@@ -87,4 +88,16 @@ function AttachColorEvents()
       $(`a[data-card-colors][data-deck-name="${id}"]`).css({"background-color": ''});
     }
   )
+}
+
+function AttachCopyEvents()
+{
+  $("[data-deck-copy]").on("click", function(){
+    let id = $(this).attr(`data-deck-copy`);
+    let txt = $(`pre[data-deck-name="${id}"]`).text();
+    navigator.clipboard.writeText(txt);
+
+    console.log(id);
+    console.log(txt);
+  });
 }
