@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12"><hr /></div>
+  </div>
+  <div class="row">
+    {% for card in deck.zones.deck %}
+    <div class="col-md-2">
+      <a href="{{card.details.scryfall_uri}}"><img class="img-fluid" src='{{card.details.image_uris.normal}}' data-bs-toggle="tooltip" title="{{card.details.name}}" /></a>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row">
+    <div class="col-12"><hr /></div>
+  </div>
+</div>

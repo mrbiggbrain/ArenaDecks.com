@@ -16,16 +16,16 @@
     
     <hr>
     <!-- <div class="container"> -->
-      <div class="row">
+      <div class="row"  id="view_preview">
         <div class="col-sm-4 d-none d-sm-block">
-          <img class="img-fluid" src="/img/Magic_card_back.jpg" data-deck-name="{{ deck.id }}">
+          <img class="img-fluid" style="position: sticky; top: 10px;" src="/img/Magic_card_back.jpg" data-deck-name="{{ deck.id }}">
         </div>
         <div class="col-sm-8">
           <div class="container">
             {% if gates.commander %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Deck ({{ cardcount.commander }})</b>
+                <b>Commander ({{ cardcount.commander }})</b>
                 <hr>
               </div>
             </div>
@@ -97,7 +97,7 @@
             {% if gates.sideboard %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Deck ({{ cardcount.sideboard }})</b>
+                <b>Sideboard ({{ cardcount.sideboard }})</b>
                 <hr>
               </div>
             </div>
@@ -167,7 +167,7 @@
     <h3>Raw Text</h3>
     <div data-deck-copy="{{deck.id}}"><i class="bi bi-files"></i></a></div>
     <hr>
-    <pre data-deck-name="{{deck.id}}">
+    <pre class="overflow-auto mh-75" data-deck-name="{{deck.id}}" id="view_raw">
       {{deck.raw}}
     </pre>
   </div>

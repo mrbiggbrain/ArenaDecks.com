@@ -6,6 +6,7 @@ $( document ).ready(function() {
   AttachWildcardEvents();
   AttachColorEvents();
   AttachCopyEvents();
+  FixHeights();
 });
 
 function AttachImageEvents()
@@ -100,4 +101,11 @@ function AttachCopyEvents()
     console.log(id);
     console.log(txt);
   });
+}
+
+function FixHeights()
+{
+  let preview = $("#view_preview").height();
+  
+  $("#view_raw").height(preview);
 }

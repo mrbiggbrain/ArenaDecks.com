@@ -18,6 +18,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPairedLiquidShortcode("card", shortcode_card);
 
+  eleventyConfig.addPairedLiquidShortcode("cardlist", shortcode_cardlist);
+
   /* Passthrough Files */
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("img");
@@ -61,6 +63,16 @@ async function shortcode_deck(content, deckname)
   return Outdent(html);
 }
 
+async function shortcode_cardlist(content)
+{
+  // Parse the content of the tag to get a functioning deck.
+  var deck = await ParseDeck(content);
+  var template = fs.readFileSync("./_includes/list.html").toString('utf-8');
+  var html = await engine.parseAndRender(template, {deck: deck});
+
+  return Outdent(html);
+}
+
 // ## Parsing Data ## //
 
 /* Parse the deck into an object */
@@ -97,7 +109,7 @@ function GetRawText(commander, deck, sideboard, companion)
 
   if(commander_size > 0)
   {
-    output += `Commander`;
+    output += `Commander\n`;
 
     for(var card of commander)
     {
