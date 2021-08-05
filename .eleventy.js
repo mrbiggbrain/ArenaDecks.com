@@ -30,7 +30,7 @@ async function shortcode_card(content)
 {
   let card = await FetchCardFromScryfall(content);
 
-  return `<a href="${card.scryfall_uri}" data-bs-toggle="tooltip" data-bs-html="true" title="<img  src='${card.image_uris.small}' />">${content}</a>`;
+  return `<a href="${card.scryfall_uri}" target="_blank" data-bs-toggle="tooltip" data-bs-html="true" title="<img  src='${card.image_uris.small}' />">${content}</a>`;
 
 }
 

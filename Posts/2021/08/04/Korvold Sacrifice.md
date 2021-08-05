@@ -1,5 +1,5 @@
 ---
-pageTitle: "Historic Brawl: Korvold (Sacrifice)"
+pageTitle: "Historic Brawl: Korvold Sacrifice"
 description: "A Korvold, Fey Cursed King deck."
 date: 2021-08-04
 ---
