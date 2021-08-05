@@ -103,7 +103,7 @@ Deck
 
 Commander
 
-1 Korvold Fae-Cursed King
+1 Korvold, Fae-Cursed King
 
 {%enddeck%}
 
@@ -262,6 +262,20 @@ What's better then playing a creature. Replaying that creature. This deck packs 
 1 Reassembling Skeleton
 1 Squee, the Immortal
 1 Journey to Eternity
+
+1 Chainer, Nightmare Adept
+
+{%endcardlist%}
+
+## Pain and Gain
+
+Although the deck does not focus very much on it, there is a very small aristocrats theme to the deck. We have a few cards that can generate life loss or cause damage from sacrificed creatures. 
+
+{%cardlist%}
+
+1 Judith, the Scourge Diva
+1 Mayhem Devil
+1 Bastion of Remembrance
 
 {%endcardlist%}
 
