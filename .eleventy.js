@@ -351,9 +351,18 @@ function bIsCardItem(line)
 /* Split up any card lines you find. */
 function SplitCardLine(l)
 {
+    // Extract the count
     var split_location = l.indexOf(' ')
     var count = l.substring(0,split_location);
-    var card = l.substring(split_location + 1);
+
+    // Extract out the card and set details.
+    var card_detail = l.substring(split_location + 1);
+    var set_location = card_detail.indexOf(' (');
+
+    var card = null;
+
+    if(set_location > 0) card = card_detail.substring(0, set_location);
+    else card = card_detail;
 
     return {count: count, card: card};
 }
