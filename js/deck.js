@@ -6,6 +6,7 @@ $( document ).ready(function() {
   AttachWildcardEvents();
   AttachColorEvents();
   AttachCopyEvents();
+  //AttachCountToImageEvents();
   FixHeights();
 });
 
@@ -101,6 +102,18 @@ function AttachCopyEvents()
     console.log(id);
     console.log(txt);
   });
+}
+
+function AttachCountToImageEvents()
+{
+  $("div.cardimage").hover(
+    function() { // Hover On
+      $(this).children("div.text-block").removeClass("d-none");
+    },
+    function() { // Hover Off
+      $(this).children("div.text-block").addClass("d-none");
+    }
+  )
 }
 
 function FixHeights()

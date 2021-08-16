@@ -189,7 +189,11 @@ async function GenerateCardslotList(lines)
     }
   }
 
-  return exportcards;
+  // Put the lands at the bottom of the list.
+  let land = exportcards.filter(card => card.details.type_line.toLowerCase().includes("land") == true);
+  let nonland = exportcards.filter(card => card.details.type_line.toLowerCase().includes("land") == false);
+
+  return nonland.concat(land);
 }
 
 /* Get wildcard details */
@@ -278,10 +282,12 @@ function LoadFetchDB()
 }
 
 /* Fetches data from scryfall */
-async function FetchCardFromScryfall(name)
+async function FetchCardFromScryfall(card_name)
 {
 
   var details = null;
+
+  let name = ChopDoubleCards(card_name);
 
   if(FetchDB.has(name.trim().toLowerCase()))
   {
@@ -322,12 +328,24 @@ async function FetchCardFromScryfall(name)
 
   let _name =  null;
   let _image_uris = null;
+  let _colors = null;
 
   if(details.hasOwnProperty('card_faces')) // Double Sided
   {
     _name = details.card_faces[0].name;
     _image_uris = details.card_faces[0].image_uris;
-    _colors = details.card_faces[0].colors.concat(details.card_faces[1]);
+
+    // For some reason the API does not have a colors attribute for the sides
+    // if both sides are the same colors. This compensates.
+    if(details.card_faces[0].hasOwnProperty('colors'))
+    {
+      _colors = details.card_faces[0].colors.concat(details.card_faces[1]);
+    }
+    else 
+    {
+      _colors = details.colors;
+    }
+
   }
   else
   {
@@ -336,7 +354,7 @@ async function FetchCardFromScryfall(name)
     _colors = details.colors;
   }
 
-  return {name: _name, image_uris: _image_uris, rarity: details.rarity, scryfall_uri: details.scryfall_uri, colors: _colors}
+  return {name: _name, image_uris: _image_uris, rarity: details.rarity, scryfall_uri: details.scryfall_uri, colors: _colors, type_line: details.type_line}
 }
 
 
@@ -388,4 +406,17 @@ function Outdent(aString)
 
   return final;
 
+}
+
+function ChopDoubleCards(card_name)
+{
+  let position = card_name.indexOf(' // ');
+  if(position > 0)
+  {
+    return card_name.substring(0, position);
+  }
+  else
+  {
+    return card_name;
+  }
 }

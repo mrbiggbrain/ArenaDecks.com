@@ -5,7 +5,7 @@
   <div class="row gy-2 gx-2">
     {% for card in deck.zones.deck %}
     <div class="col-md-2">
-      <a href="{{card.details.scryfall_uri}}" target="_blank" ><img class="img-fluid" src='{{card.details.image_uris.normal}}' data-bs-toggle="tooltip" title="{{card.details.name}}" /></a>
+      <a href="{{card.details.scryfall_uri}}" target="_blank" ><img class="img-fluid" src='{{card.details.image_uris.normal}}' data-bs-toggle="tooltip" title="{{card.details.name}} (x{{card.count}})" /></a>
     </div>
     {% endfor %}
   </div>

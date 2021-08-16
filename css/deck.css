@@ -1,1 +1,16 @@
 .tooltip.in{opacity:1!important;}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cardimage {
+  position: relative;
+}
