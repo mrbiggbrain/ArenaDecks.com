@@ -18,6 +18,6 @@ I started sharing my decks for Magic the Gathering: Arena a few years ago. I wan
 
 But the more and more I tried to post, the more painful it become. I wanted to write content and work on decks, but I had to spend much of my time working on formatting and fixing little layout bugs. To top all of that off, I had to keep the site updated, work on the layout, and deal with spam, backups, and things I just never wanted to deal with (I do IT for a living, I don;t want to do it as a hobby.)
 
-So at the beginning of 2021 I made a promise to myself, I would find a better way. A way tat had me focusing on making content I loved, and sharing the game I loved playing. I had a big list of things I wanted, and no idea how to get there. 
+So at the beginning of 2021 I made a promise to myself, I would find a better way. A way that had me focusing on making content I loved, and sharing the game I loved playing. I had a big list of things I wanted, and no idea how to get there. 
 
 It took me a while but I finally found something that excited me. [11ty](https://www.11ty.dev/) is a static site generator that takes plain text markdown files, templates, JavaScript, and other static resources and build beautiful static sites that can be deployed. The more I used this workflow, the more I loved it. I got to write in simple markdown, write clean and simple JavaScript, author easy to follow templates, and got out gorgeous looking blog posts for free. 
