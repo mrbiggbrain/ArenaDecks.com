@@ -36,7 +36,7 @@
                     <!-- Loop through cards -->
                     {% for card in deck.zones.commander %}
                     <div class="col-md-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
@@ -60,7 +60,7 @@
                     <!-- Loop through cards -->
                     {% for card in deck.zones.companion %}
                     <div class="col-md-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
@@ -108,7 +108,7 @@
                     <!-- Loop through cards -->
                     {% for card in deck.zones.sideboard %}
                     <div class="col-md-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
