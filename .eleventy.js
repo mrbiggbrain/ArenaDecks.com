@@ -330,7 +330,7 @@ async function FetchCardFromScryfall(card_name)
   let _image_uris = null;
   let _colors = null;
 
-  if(details.hasOwnProperty('card_faces')) // Double Sided
+  if(details.hasOwnProperty('card_faces') && details.card_faces[0].hasOwnProperty('image_uris')) // Double Sided
   {
     _name = details.card_faces[0].name;
     _image_uris = details.card_faces[0].image_uris;
@@ -346,6 +346,22 @@ async function FetchCardFromScryfall(card_name)
       _colors = details.colors;
     }
 
+  }
+  else if(details.hasOwnProperty('card_faces')) // Non-Double Sided cards with multiple faces (Adventures, Split)
+  {
+    _name = details.card_faces[0].name;
+    _image_uris = details.image_uris;
+
+    // For some reason the API does not have a colors attribute for the sides
+    // if both sides are the same colors. This compensates.
+    if(details.card_faces[0].hasOwnProperty('colors'))
+    {
+      _colors = details.card_faces[0].colors.concat(details.card_faces[1]);
+    }
+    else 
+    {
+      _colors = details.colors;
+    }
   }
   else
   {
