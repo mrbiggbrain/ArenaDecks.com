@@ -3,7 +3,7 @@ pageTitle: "Alchemy Starter Decks"
 permalink: "/Starter-Decks-Alchemy/"
 date: 2022-01-10
 description: "A collection of affordable Alchemy decks for MTGA."
-SocialCardImage: "Alchemy"
+SocialCardImage: "AlchemyStarter"
 ---
 
 Alchemy is Arena's digital only rotating format. Alchemy decks can be made of any card in standard, plus a selection of digital only cards injected into the format. In addition Alchemy allows for certain cards to receive modifications, often called nerfs or buffs. 

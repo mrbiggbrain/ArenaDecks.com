@@ -2,6 +2,7 @@
 pageTitle: "Historic: Orzhov Taxes"
 description: "An extremely grindy Historic deck designed to make the opponent pay in some way for almost everything they want to do."
 date: 2021-09-15
+SocialCardImage: "Historic_OrhovTaxes_2022_01_15"
 ---
 
 {%deck "Orzhov Taxes"%}

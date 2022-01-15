@@ -4,20 +4,21 @@ title: My Posts
 permalink: "/archive/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber | plus: 1 }}/{% endif %}index.html"
 pagination:
   data: collections.posts
-  size: 25
+  size: 10
   alias: posts
   reverse: true
 ---
 <div class="container">
 
   <div class="row">
-    <div class="col-sm-6 text-center">
+    <div class="col-sm-12 text-center">
       <hr />
       <H3>Archive</H3>
       <hr />
     </div>
   </div>
 
+  <!--
   {% for post in posts %}
     <div class="row">
       <div class="col-sm-4">
@@ -28,9 +29,41 @@ pagination:
       </div>
     </div>
   {% endfor %}
+  -->
+
+  {% for post in posts %}
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="{{ post.url | url }}">
+          <img class="img-fluid" style="position: sticky; top: 10px;" 
+          {% if post.data.SocialCardImage == blank %}
+          src="/img/Social/Default.png" 
+          {% else %}
+          src="/img/Social/{{post.data.SocialCardImage}}.png" 
+          {% endif %}
+          data-deck-name="{{ deck.id }}">
+        </a>
+      </div>
+      <div class="col-sm-9">
+        <a href="{{ post.url | url }}" class="text-reset text-decoration-none"><h2>{{ post.data.pageTitle }}</h2></a>
+        <hr />
+        {{post.data.description}}
+        <div class="mt-auto">
+          ({{ post.date | date: "%Y-%m-%d" }})
+        </div>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <hr />
+      </div>  
+    </div>
+
+  {% endfor %}
   
   <div class="row">
-      <div class="col-sm-2 text-center">
+      <div class="col-sm-2 offset-sm-3 text-center">
           <hr />
           <a {% if pagination.href.previous %}href="{{pagination.href.previous}}"{% endif %}>Previous Page</a>
           <hr />

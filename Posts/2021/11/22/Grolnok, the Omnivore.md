@@ -2,6 +2,7 @@
 pageTitle: "Historic Brawl: Grolnok, the Omnivore"
 description: "A Historic Brawl deck designed to give you massive card advantage."
 date: 2021-11-22
+SocialCardImage: "HistoricBrawl_Grolnok_2022_15_01"
 ---
 
 {%deck "Grolnok, the Omnivore"%}

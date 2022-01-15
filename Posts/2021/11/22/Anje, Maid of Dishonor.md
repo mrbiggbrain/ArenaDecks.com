@@ -2,6 +2,7 @@
 pageTitle: "Historic Brawl: Anje, Maid of Dishonor"
 description: "One Wild Ride"
 date: 2021-11-22
+SocialCardImage: "HistoricBrawl_Anji_2022_15_01"
 ---
 
 {%deck "Anje, Maid of Dishonor"%}

@@ -2,6 +2,7 @@
 pageTitle: "Alchemy: Key Circle"
 description: "An Alchemy deck built around playing banned Historic cards in Alchemy."
 date: 2021-12-09
+SocialCardImage: "Alchemy_MonoWhite_Key"
 ---
 
 {%deck "Key Circle"%}
