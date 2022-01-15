@@ -1,6 +1,6 @@
 ---
 pageTitle: "Historically Inaccurate: Dungeon Combo"
-description: "Infinite Venturing"
+description: "A Historic deck centered around going infinite with Acererak the Archlich and Omniscience"
 date: 2021-07-11
 ---
 

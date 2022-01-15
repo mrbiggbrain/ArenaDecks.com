@@ -1,6 +1,6 @@
 ---
 pageTitle: "Historic: Mono-G Hungering Hydra"
-description: "COUNTERS!"
+description: "A Historic deck built around making a very large Hungering Hydra."
 date: 2021-08-14
 ---
 

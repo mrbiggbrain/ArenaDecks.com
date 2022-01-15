@@ -1,6 +1,6 @@
 ---
 pageTitle: "Grixis Venture"
-description: "Hit Face"
+description: "An improved deck built around using Acererak the Archlich to repeatedly deal damage"
 date: 2021-08-12
 ---
 

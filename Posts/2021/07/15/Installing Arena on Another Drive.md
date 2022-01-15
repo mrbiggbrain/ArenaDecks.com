@@ -1,6 +1,6 @@
 ---
 pageTitle: "Installing Arena on Another Drive"
-description: "A guide for SSD Users"
+description: "A guide for moving MTGA to a second drive."
 date: 2021-07-15
 ---
 

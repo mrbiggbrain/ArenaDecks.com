@@ -1,6 +1,6 @@
 ---
 pageTitle: "Historic Brawl: Rhys the Redeemed"
-description: "Wide Open"
+description: "A Historic Brawl deck designed to make a very large number of tokens."
 date: 2021-08-16
 ---
 

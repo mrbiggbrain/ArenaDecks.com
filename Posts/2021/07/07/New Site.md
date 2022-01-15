@@ -1,6 +1,7 @@
 ---
 pageTitle: "New Site, Same Great Content"
 date: 2021-07-07
+description: "Details on the new site and features." 
 ---
 
 Gotta love that new site smell. For the longest time I was hosting my site on a Wordpress instance on AWS. It worked, but not the way I wanted it to. I spent way too much time focusing on keeping the servers running and everything updated and way too little time focusing on the content. 

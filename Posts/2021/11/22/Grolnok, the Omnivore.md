@@ -1,6 +1,6 @@
 ---
 pageTitle: "Historic Brawl: Grolnok, the Omnivore"
-description: "One Wild Ride"
+description: "A Historic Brawl deck designed to give you massive card advantage."
 date: 2021-11-22
 ---
 

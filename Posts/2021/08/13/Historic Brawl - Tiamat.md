@@ -1,6 +1,6 @@
 ---
 pageTitle: "Historic Brawl: Tiamat Dragons"
-description: "Hit Face"
+description: "A five color dragon deck for Historic Brawl"
 date: 2021-08-13
 ---
 

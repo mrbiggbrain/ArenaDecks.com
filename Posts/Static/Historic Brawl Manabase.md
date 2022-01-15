@@ -2,6 +2,7 @@
 pageTitle: "Historic Brawl Mana Bases"
 permalink: "/Historic-Brawl-Mana/"
 date: 2021-08-12
+description: "A generic manabase for various Historic Brawl decks."
 ---
 
 # Overview

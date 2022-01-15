@@ -1,6 +1,6 @@
 ---
 pageTitle: "Historic: Orzhov Taxes"
-description: "Pay the Piper"
+description: "An extremely grindy Historic deck designed to make the opponent pay in some way for almost everything they want to do."
 date: 2021-09-15
 ---
 

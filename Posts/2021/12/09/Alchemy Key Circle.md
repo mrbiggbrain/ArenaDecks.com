@@ -1,6 +1,6 @@
 ---
 pageTitle: "Alchemy: Key Circle"
-description: "Nothing Like the First"
+description: "An Alchemy deck built around playing banned Historic cards in Alchemy."
 date: 2021-12-09
 ---
 
