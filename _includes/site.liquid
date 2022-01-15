@@ -6,7 +6,12 @@
         <meta property="og:url" content="https://arenadecks.com{{ page.url | url }}">
         <meta property="og:title" content="{{ pageTitle }}">
         <meta property="og:description" content="{{ description }}">
-        <meta property="og:image" content="https://arenadecks.com/img/Arena_Decks.png">
+
+        {% if SocialCardImage == blank %}
+        <meta property="og:image" content="https://arenadecks.com/img/Social/default.png">
+        {%else%}
+        <meta property="og:image" content="https://arenadecks.com/img/Social/{{SocialCardImage}}.png">
+        {% endif %}
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
