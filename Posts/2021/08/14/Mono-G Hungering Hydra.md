@@ -2,6 +2,7 @@
 pageTitle: "Historic: Mono-G Hungering Hydra"
 description: "A Historic deck built around making a very large Hungering Hydra."
 date: 2021-08-14
+SocialCardImage: "Historic_HungeringHydra_2022_01_15"
 ---
 
 {%deck "Mono-G Hungering Hydra"%}

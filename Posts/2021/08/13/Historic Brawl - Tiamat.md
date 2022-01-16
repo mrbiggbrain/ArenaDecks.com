@@ -2,6 +2,7 @@
 pageTitle: "Historic Brawl: Tiamat Dragons"
 description: "A five color dragon deck for Historic Brawl"
 date: 2021-08-13
+SocialCardImage: "HistoricBrawl_TiamatDragons_2022_01_15"
 ---
 
 {%deck "Tiamat Dragons"%}

@@ -2,6 +2,7 @@
 pageTitle: "Grixis Venture"
 description: "An improved deck built around using Acererak the Archlich to repeatedly deal damage"
 date: 2021-08-12
+SocialCardImage: "HistoricBrawl_GrixisVenture_2022_01_15"
 ---
 
 

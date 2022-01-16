@@ -2,6 +2,7 @@
 pageTitle: "Historic Pauper: Boros Slivers"
 description: "Their Back!"
 date: 2021-08-31
+SocialCardImage: "HistoricPauper_BorosSlivers_2022_01_15"
 ---
 
 {%deck "Historic Pauper: Boros Slivers"%}

@@ -8,7 +8,7 @@ permalink: /api/posts.json
       "title": "{{ data.pageTitle }}",
       "description": "{{ data.description }}",
       "url": "{{ post.url }}",
-      "timestamp": "{{ post.date.getMonth() }}/{{ post.date.getDate() }}/{{ post.date.getFullYear() }}"
+      "timestamp": "{{ data.date | date('YYYY-MM-DD') }}"
     }{{ '' if loop.last else ',' }}
   {% endfor  %}
 ]

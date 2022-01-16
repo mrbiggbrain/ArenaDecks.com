@@ -3,6 +3,7 @@ const fetch = require('node-fetch');
 const md5 = require('md5');
 const fs = require('fs');
 var {Liquid} = require('liquidjs');
+const moment = require("moment");
 
 var FetchDB = LoadFetchDB();
 
@@ -24,6 +25,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+
+  // date filter
+  eleventyConfig.addFilter("date", function(date, format) {
+    return moment(date).format(format);
+  });
 }
 
 async function shortcode_card(content)

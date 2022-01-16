@@ -2,6 +2,7 @@
 pageTitle: "Historic Brawl: Korvold Dragons"
 description: "A Korvold, Fey Cursed King deck."
 date: 2021-08-05
+SocialCardImage: "HistoricBrawl_KorvoldDragons_2022_01_15"
 ---
 
 {%deck "Korvold Dragons"%}

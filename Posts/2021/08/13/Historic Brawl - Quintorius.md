@@ -2,6 +2,7 @@
 pageTitle: "Historic Brawl: Quintorius, Field Historian"
 description: "A fun & Janky Historic Brawl Deck"
 date: 2021-08-13
+SocialCardImage: "HistoricBrawl_Quintorius_2022_01_15"
 ---
 
 {%deck "Quintorius, Field Historian"%}

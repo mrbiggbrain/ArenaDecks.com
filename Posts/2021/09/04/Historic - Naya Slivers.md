@@ -2,6 +2,7 @@
 pageTitle: "Historic: Naya Slivers"
 description: "Their Back!"
 date: 2021-09-04
+SocialCardImage: "Historic_NayaSlivers_2022_01_15"
 ---
 
 {%deck "Naya Slivers"%}

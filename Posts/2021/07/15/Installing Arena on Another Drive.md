@@ -2,6 +2,7 @@
 pageTitle: "Installing Arena on Another Drive"
 description: "A guide for moving MTGA to a second drive."
 date: 2021-07-15
+SocialCardImage: "SSD_2022_01_15"
 ---
 
 If your computer has both an SSD and Harddrive you may be running into quite a common issue with your MTG Arena installation. The installer and updater almost exclusively want to use the primary drive on the computer and install to the `C:\Program Files` folder on the computer.  However in many modern computers with SSDs this space can be limited and so users tend to reserve it for applications that need the performance offered by them.

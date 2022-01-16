@@ -2,6 +2,7 @@
 pageTitle: "Historic Brawl: Rhys the Redeemed"
 description: "A Historic Brawl deck designed to make a very large number of tokens."
 date: 2021-08-16
+SocialCardImage: "HistoricPauper_Rhys_2022_01_15"
 ---
 
 

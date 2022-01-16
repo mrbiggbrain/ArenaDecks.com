@@ -2,6 +2,7 @@
 pageTitle: "Historically Inaccurate: Dungeon Combo"
 description: "A Historic deck centered around going infinite with Acererak the Archlich and Omniscience"
 date: 2021-07-11
+SocialCardImage: "DungeonCombo_2022_01_15"
 ---
 
 {% deck "Dungeon Combo" %}

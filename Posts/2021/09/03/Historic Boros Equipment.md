@@ -2,6 +2,7 @@
 pageTitle: "Historic: Boros Equipment"
 description: "Wanna Swing?"
 date: 2021-09-03
+SocialCardImage: "Historic_BorosEquipment_2022_01_15"
 ---
 
 {%deck "Boros Equipment"%}
