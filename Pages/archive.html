@@ -48,9 +48,8 @@ pagination:
         <a href="{{ post.url | url }}" class="text-reset text-decoration-none"><h2>{{ post.data.pageTitle }}</h2></a>
         <hr />
         {{post.data.description}}
-        <div class="mt-auto">
-          ({{ post.date | date: "%Y-%m-%d" }})
-        </div>
+        <br />
+        <em>({{ post.date | date: "YYYY-MM-DD" }})</em>
         
       </div>
     </div>

@@ -2,6 +2,8 @@
 pageTitle: "Best of Fun: Classy Constellations"
 description: "A fun artisan deck centering around using classes to trigger constellation."
 date: 2021-07-11
+SocialCardImage: "ClassConstellation_2022_01_15"
+
 ---
 
 {% deck "Classy Constellations" %}
