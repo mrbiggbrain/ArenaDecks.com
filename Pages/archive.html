@@ -37,9 +37,9 @@ pagination:
         <a href="{{ post.url | url }}">
           <img class="img-fluid" style="position: sticky; top: 10px;" 
           {% if post.data.SocialCardImage == blank %}
-          src="/img/Social/Default.png" 
+          src="https://static.arenadecks.com/img/Social/Default.png" 
           {% else %}
-          src="/img/Social/{{post.data.SocialCardImage}}.png" 
+          src="https://static.arenadecks.com/img/Social/{{post.data.SocialCardImage}}.png" 
           {% endif %}
           data-deck-name="{{ deck.id }}">
         </a>
