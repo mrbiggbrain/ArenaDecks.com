@@ -24,3 +24,9 @@ Deck
 4 Blightstep Pathway (KHM) 252
 4 Haunted Ridge (MID) 263
 {%enddeck%}
+
+## Overview
+
+The Alchemy format is pretty wide open right now. Aggressive, controlling and even midrange strategies can find their place in the format and with a dynamic and wide meta they can often even find success. 
+
+This Rakdos Midrange deck is designed to out value opponents and close out games unexpectedly. A large amount of artifact synergies, treasures, and agressive creatures means the deck can often find purchase against aggro and try to go under control. 
