@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+          <hr />
+        </div>
+    </div>
+    <div class="row gy-2 gx-2">
+      <div class="col-md-3">
+        <a href="{{card.scryfall_uri}}" target="_blank" ><img class="img-fluid" src='{{card.image_uris.normal}}' data-bs-toggle="tooltip" title="{{card.details.name}} (x{{card.count}})" /></a>
+      </div>
+      <div class="col-md-7 offset-md-1">
+          <h3 class="text-center">{{card.name}}</h3>
+          <hr />
+          {{content}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12"><hr /></div>
+    </div>
+  </div>

@@ -21,6 +21,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPairedLiquidShortcode("cardlist", shortcode_cardlist);
 
+  eleventyConfig.addPairedLiquidShortcode("cardhighlight", shortcode_cardhighlight);
+
   /* Passthrough Files */
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("img");
@@ -75,6 +77,15 @@ async function shortcode_cardlist(content)
   var deck = await ParseDeck(content);
   var template = fs.readFileSync("./_includes/list.html").toString('utf-8');
   var html = await engine.parseAndRender(template, {deck: deck});
+
+  return Outdent(html);
+}
+
+async function shortcode_cardhighlight(content, cardname)
+{
+  let card = await FetchCardFromScryfall(cardname);
+  var template = fs.readFileSync("./_includes/highlight.html").toString('utf-8');
+  var html = await engine.parseAndRender(template, {card: card, content: content});
 
   return Outdent(html);
 }
