@@ -68,16 +68,16 @@ Deck
 2 Embercleave (ELD) 120
 11 Mountain (NEO) 300
 2 Shadowspear (THB) 236
-4 Plate Armor (AFR) 32
+3 A-Bruenor Battlehammer (AFR) 219
 3 Danitha Capashen, Paragon (DAR) 12
 4 Champion of the Flame (DAR) 116
 4 Goblin Gaveleer (SOM) 92
 2 Rabbit Battery (NEO) 157
 2 Valduk, Keeper of the Flame (DAR) 148
-3 Bruenor Battlehammer (AFR) 219
 4 Abrade (AKR) 136
 4 Lava Coil (GRN) 108
 4 Sacred Foundry (GRN) 254
+4 A-Plate Armor (AFR) 32
 
 Sideboard
 2 Tibalt, Rakish Instigator (WAR) 146
@@ -98,7 +98,7 @@ This deck is all about aggressive creatures being buffed by equipment and swingi
 2 Shadowspear (THB) 236
 4 Champion of the Flame (DAR) 116
 4 Goblin Gaveleer (SOM) 92
-3 Bruenor Battlehammer (AFR) 219
+3 A-Bruenor Battlehammer (AFR) 219
 {%endcardlist%}
 
 <br />
@@ -250,6 +250,13 @@ Deck
 4 Watery Grave (GRN) 259
 9 Snow-Covered Island (MH1) 251
 9 Snow-Covered Swamp (MH1) 252
+
+Sideboard
+4 Plumb the Forbidden (STX) 81
+2 Soul-Guide Lantern (THB) 237
+3 Dive Down (XLN) 53
+4 Spell Pierce (NEO) 80
+2 Disdainful Stroke (KHM) 54
 {%enddeck%}
 
 ### Overview
@@ -306,4 +313,90 @@ This deck is all about drawing cards, going wide, and then jamming in with a big
 4 All That Glitters (ELD) 2
 2 Archon of Sun's Grace (THB) 3
 2 Calix, Destiny's Hand (THB) 211
+{%endcardlist%}
+
+<br />
+
+<!-- Elves -->
+
+{%deck "Elves"%}
+Deck
+2 Allosaurus Shepherd (JMP) 28
+16 Forest (NEO) 302
+3 Elvish Archdruid (JMP) 391
+3 Beast Whisperer (GRN) 123
+4 Llanowar Elves (DAR) 168
+4 Imperious Perfect (LRW) 220
+4 Jaspera Sentinel (KHM) 178
+4 Paradise Druid (WAR) 171
+4 Band Together (WAR) 153
+4 Elvish Visionary (ORI) 175
+4 Reclamation Sage (M19) 196
+4 Lys Alana Huntmaster (LRW) 229
+2 Growing Rites of Itlimoc (XLN) 191
+1 Boseiju, Who Endures (NEO) 266
+1 Arch of Orazca (RIX) 185
+
+Sideboard
+4 Might of the Masses (M20) 182
+3 Life Goes On (AKR) 199
+3 Field of Ruin (XLN) 254
+1 Life Goes On (AKR) 199
+4 Prey Upon (GRN) 143
+{%enddeck%}
+
+### Overview
+
+Elves are just one of those classic creature decks that finds a place in almost any format. This deck aims to go wide, sometimes very wide and then pump up our team with Allosaurus Shepherd to win in one massive swing. We use a good number of mana producing creatures as well as some card draw to keep the ball rolling and our hand full, this means boards can get rather crazy rather quickly and make for some explosive turns. 
+
+A note on this deck, normally we keep pretty hard to the 6 non-land and 4 land rares, but Growing Rites of Itlimoc is Gaea's Cradle with extra steps which is historially very good in builds like this, so I included 2 copies of that over two generically good green sources
+
+{%cardlist%}
+2 Allosaurus Shepherd (JMP) 28
+3 Elvish Archdruid (JMP) 391
+3 Beast Whisperer (GRN) 123
+2 Growing Rites of Itlimoc (XLN) 191
+4 Imperious Perfect (LRW) 220
+4 Lys Alana Huntmaster (LRW) 229
+{%endcardlist%}
+
+</br>
+
+<!-- Goblins -->
+
+{%deck "Goblins"%}
+Deck
+2 Muxus, Goblin Grandee (JMP) 24
+20 Mountain (NEO) 300
+4 Goblin Chieftain (JMP) 324
+2 Embercleave (ELD) 120
+4 Skirk Prospector (DAR) 144
+4 Battle Cry Goblin (AFR) 132
+4 Goblin Instigator (M19) 142
+4 Gempalm Incinerator (LGN) 94
+4 Goblin Warchief (DAR) 130
+4 Twinshot Sniper (NEO) 168
+4 Shock (STA) 44
+4 Den of the Bugbear (AFR) 254
+
+Sideboard
+2 Claim the Firstborn (STA) 37
+3 Raze the Effigy (MID) 156
+4 Abrade (VOW) 139
+2 Goblin Cratermaker (GRN) 103
+2 Fry (M20) 140
+2 Soul-Guide Lantern (THB) 237
+{%enddeck%}
+
+### Overview
+
+Goblins is another one of those classic tribes. This build is build around aggressive early game creatures that are followed up by Muxus to often close out the game very quickly. You'll want to focus on agression in the early part of the game so you can  go wide and sneak in a cheap Embercleave for the win. 
+
+{%cardlist%}
+2 Muxus, Goblin Grandee (JMP) 24
+4 Goblin Chieftain (JMP) 324
+2 Embercleave (ELD) 120
+4 Den of the Bugbear (AFR) 254
+4 Battle Cry Goblin (AFR) 132
+4 Goblin Warchief (DAR) 130
 {%endcardlist%}
