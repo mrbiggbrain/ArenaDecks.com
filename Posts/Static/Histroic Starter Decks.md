@@ -315,6 +315,49 @@ This deck is all about drawing cards, going wide, and then jamming in with a big
 2 Calix, Destiny's Hand (THB) 211
 {%endcardlist%}
 
+</br>
+
+<!-- Simic Flash -->
+
+{%deck "Simic Flash"%}
+Deck
+9 Forest (NEO) 302
+2 Brazen Borrower (ELD) 39
+4 Nightpack Ambusher (M20) 185
+9 Island (NEO) 296
+2 Voracious Greatshark (IKO) 70
+4 Decisive Denial (STX) 177
+4 Frilled Mystic (RNA) 174
+4 Brineborn Cutthroat (M20) 50
+4 Spectral Sailor (M20) 76
+4 Curious Obsession (RIX) 35
+2 Ram Through (IKO) 170
+4 Quench (RNA) 48
+4 Essence Scatter (IKO) 49
+4 Breeding Pool (RNA) 246
+
+Sideboard
+4 Negate (ZNR) 71
+3 Blink of an Eye (DAR) 46
+2 Ravenform (KHM) 72
+2 Test of Talents (STX) 59
+2 Narset, Parter of Veils (WAR) 61
+2 Spell Pierce (XLN) 81
+{%enddeck%}
+
+### Overview
+
+Why play spells on your turn when you can play them on your opponents. Simic flash is all about holding up answers, while also holding up more answers, well also holding up threats. With 18 main deck counterspells, and plenty of flash threats you'll find yourself controlling the board. We also have plenty of ways to deal with things that sneak in between our counters with a full playset of Decisive Denial and a double copy of Ram Through. 
+
+{%cardlist%}
+2 Brazen Borrower (ELD) 39
+4 Nightpack Ambusher (M20) 185
+4 Frilled Mystic (RNA) 174
+4 Brineborn Cutthroat (M20) 50
+2 Ram Through (IKO) 170
+2 Voracious Greatshark (IKO) 70
+{%endcardlist%}
+
 <br />
 
 <!-- Elves -->
