@@ -14,3 +14,13 @@
 .cardimage {
   position: relative;
 }
+
+.card-zoom {
+  transition: transform .2s;
+}
+
+.card-zoom:hover {
+  position:relative;
+  z-index: 100;
+  transform: scale(1.1);
+}
