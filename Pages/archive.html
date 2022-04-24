@@ -33,7 +33,7 @@ pagination:
 
   {% for post in posts %}
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-12 col-md-3">
         <a href="{{ post.url | url }}">
           <img class="img-fluid" style="position: sticky; top: 10px;" 
           {% if post.data.SocialCardImage == blank %}
@@ -44,7 +44,7 @@ pagination:
           data-deck-name="{{ deck.id }}">
         </a>
       </div>
-      <div class="col-sm-9">
+      <div class="col-sm-9 d-none d-md-block">
         <a href="{{ post.url | url }}" class="text-reset text-decoration-none"><h2>{{ post.data.pageTitle }}</h2></a>
         <hr />
         {{post.data.description}}
