@@ -36,7 +36,7 @@ Deck
 
 ## Overview
 
-Muldrotha Pod has been one of my favorite decks for a really long time. I played this deck in standard, then historic, and now I am taking it for a spin in Explorer. Much of what made this deck good in [The Historic Version]({{/Posts/2022/02/26/Muldrotha%20Pod/  | URL }}) carries over with some new tech we didn't have previously. 
+Muldrotha Pod has been one of my favorite decks for a really long time. I played this deck in standard, then historic, and now I am taking it for a spin in Explorer. Much of what made this deck good in The Historic Version carries over with some new tech we didn't have previously. 
 
 ## The Core
 
