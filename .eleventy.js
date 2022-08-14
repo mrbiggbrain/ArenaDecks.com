@@ -347,7 +347,8 @@ async function FetchCardFromScryfall(card_name)
   let _image_uris = null;
   let _colors = null;
 
-  if(details.hasOwnProperty('card_faces') && details.card_faces[0].hasOwnProperty('image_uris')) // Double Sided
+  //if(details.hasOwnProperty('card_faces') && details.card_faces[0].hasOwnProperty('image_uris')) // Double Sided
+  if(details.layout == "modal_dfc" || details.layout == "transform" )
   {
     _name = details.card_faces[0].name;
     _image_uris = details.card_faces[0].image_uris;
@@ -364,7 +365,8 @@ async function FetchCardFromScryfall(card_name)
     }
 
   }
-  else if(details.hasOwnProperty('card_faces')) // Non-Double Sided cards with multiple faces (Adventures, Split)
+  //else if(details.hasOwnProperty('card_faces')) // Non-Double Sided cards with multiple faces (Adventures, Split)
+  else if(details.layout == "split" || details.layout == "adventure")
   {
     _name = details.card_faces[0].name;
     _image_uris = details.image_uris;
