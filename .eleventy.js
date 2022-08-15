@@ -283,7 +283,8 @@ function LoadFetchDB()
     let data = JSON.parse(fs.readFileSync(`_data/fetchdb/${file}`));
     let _name_ = null;
 
-    if(data.hasOwnProperty('card_faces')) // Double Sided
+    // if(data.hasOwnProperty('card_faces')) // Double Sided
+    if(data.layout == "modal_dfc" || data.layout == "transform" || data.layout == "split" || data.layout == "adventure")
     {
       _name_ = data.card_faces[0].name;
     }
@@ -318,7 +319,8 @@ async function FetchCardFromScryfall(card_name)
 
     details = JSON.parse(body);
 
-    if(details.hasOwnProperty('card_faces')) // Double Sided
+    // if(details.hasOwnProperty('card_faces')) // Double Sided
+    if(details.layout == "modal_dfc" || details.layout == "transform" || details.layout == "split" || details.layout == "adventure")
     {
       _name_ = details.card_faces[0].name;
     }
@@ -347,7 +349,6 @@ async function FetchCardFromScryfall(card_name)
   let _image_uris = null;
   let _colors = null;
 
-  //if(details.hasOwnProperty('card_faces') && details.card_faces[0].hasOwnProperty('image_uris')) // Double Sided
   if(details.layout == "modal_dfc" || details.layout == "transform" )
   {
     _name = details.card_faces[0].name;
@@ -365,7 +366,6 @@ async function FetchCardFromScryfall(card_name)
     }
 
   }
-  //else if(details.hasOwnProperty('card_faces')) // Non-Double Sided cards with multiple faces (Adventures, Split)
   else if(details.layout == "split" || details.layout == "adventure")
   {
     _name = details.card_faces[0].name;
