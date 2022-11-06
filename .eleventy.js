@@ -123,9 +123,12 @@ function GetRawText(commander, deck, sideboard, companion)
   let companion_size = companion.length;
 
   var output = ``;
+  var zonecount = 0;
 
   if(commander_size > 0)
   {
+    zonecount++;
+
     output += `Commander\n`;
 
     for(var card of commander)
@@ -133,14 +136,17 @@ function GetRawText(commander, deck, sideboard, companion)
       output += `${card.count} ${card.details.name}\n`;
     }
 
-    if(deck_size >0 || sideboard_size > 0 || companion_size > 0)
-    {
-      output += `<br />`;
-    }
+    // if(deck_size >0 || sideboard_size > 0 || companion_size > 0)
+    // {
+    //   output += `<br />`;
+    // }
   }
 
   if(companion_size > 0)
   {
+    if(zonecount) output += `<br />`;
+    zonecount++;
+
     output += `Companion\n`;
 
     for(var card of companion)
@@ -148,14 +154,17 @@ function GetRawText(commander, deck, sideboard, companion)
       output += `${card.count} ${card.details.name}\n`;
     }
 
-    if(deck_size >0 || sideboard_size > 0)
-    {
-      output += `</br>`;
-    }
+    // if(deck_size >0 || sideboard_size > 0)
+    // {
+    //   output += `</br>`;
+    // }
   }
 
   if(deck_size > 0)
   {
+    if(zonecount) output += `<br />`;
+    zonecount++;
+
     output += `Deck\n`;
 
     for(var card of deck)
@@ -163,14 +172,17 @@ function GetRawText(commander, deck, sideboard, companion)
       output += `${card.count} ${card.details.name}\n`;
     }
 
-    if(sideboard_size > 0)
-    {
-      output += `<br />`;
-    }
+    // if(sideboard_size > 0)
+    // {
+    //   output += `<br />`;
+    // }
   }
 
   if(sideboard_size > 0)
   {
+    if(zonecount) output += `<br />`;
+    zonecount++;
+
     output += `Sideboard\n`;
 
     for(var card of sideboard)

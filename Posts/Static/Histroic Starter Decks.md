@@ -24,7 +24,7 @@ Deck
 4 Deadly Dispute (AFR) 94
 4 Dragonspark Reactor (NEO) 137
 2 Magda, Brazen Outlaw (KHM) 142
-2 A-Goldspan Dragon (KHM) 139
+2 Goldspan Dragon (KHM) 139
 4 Blood Fountain (VOW) 95
 2 Mukotai Soulripper (NEO) 113
 4 Experimental Synthesizer (NEO) 138
@@ -54,7 +54,7 @@ This deck is all about small incremental value backed up by a decent dose of rem
 2 Mukotai Soulripper (NEO) 113
 4 Reinforced Ronin (NEO) 158
 2 Magda, Brazen Outlaw (KHM) 142
-2 A-Goldspan Dragon (KHM) 139
+2 Goldspan Dragon (KHM) 139
 {%endcardlist%}
 
 <br />
