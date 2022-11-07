@@ -331,6 +331,16 @@ async function FetchCardFromScryfall(card_name)
 
     details = JSON.parse(body);
 
+    if(details.hasOwnProperty('id'))
+    {
+      console.log(`----Fetched ${name} from scryfall (No local cache)`);
+    }
+    else
+    {
+      console.log(`CRAP!!!`);
+      throw "INVALID CARD!!!";
+    }
+
     // if(details.hasOwnProperty('card_faces')) // Double Sided
     if(details.layout == "modal_dfc" || details.layout == "transform" || details.layout == "split" || details.layout == "adventure")
     {

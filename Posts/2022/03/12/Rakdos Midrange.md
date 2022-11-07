@@ -12,7 +12,7 @@ Deck
 4 Dragonspark Reactor (NEO) 137
 4 Shatterskull Smashing (ZNR) 161
 4 Magda, Brazen Outlaw (KHM) 142
-4 A-Goldspan Dragon (KHM) 139
+4 Goldspan Dragon (KHM) 139
 2 Unexpected Windfall (AFR) 164
 4 Bloodtithe Harvester (VOW) 232
 4 Swamp (NEO) 298
@@ -37,7 +37,7 @@ One of the main synergies of the deck is treasures. Many of our cards care about
 
 {%cardlist%}
 4 Magda, Brazen Outlaw (KHM) 142
-4 A-Goldspan Dragon (KHM) 139
+4 Goldspan Dragon (KHM) 139
 2 Unexpected Windfall (AFR) 164
 {%endcardlist%}
 
