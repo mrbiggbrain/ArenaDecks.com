@@ -1,6 +1,6 @@
 ---
 pageTitle: "Explorer: Dreadshift"
-date: 2022-12-17
+date: 2022-12-18
 description: "Our Presence is draining."
 SocialCardImage: "Dreadscape_2022_12_18"
 ---
