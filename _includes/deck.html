@@ -34,7 +34,7 @@
                 <div class=container">
                   <div class="row gx-1">
                     <!-- Loop through cards -->
-                    {% for card in deck.zones.commander.Cards %}
+                    {% for card in deck.zones.Commander.Cards %}
                     <div class="col-md-6">
                       {{card.count}} <a href="{{ card.card.ScryfallUri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.card.Rarity }}" data-image-url="{{card.card.ImageURIs.normal}}" data-card-colors="{{card.card.Colors}}" target="_blank" rel="noopener noreferrer">{{card.card.Name}}</a><br>
                     </div>
