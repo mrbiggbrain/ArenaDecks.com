@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^2.0.1",
     "cheerio": "^1.0.0-rc.10",
-    "liquidjs": "^9.25.1",
+    "liquidjs": "^10.8.3",
     "md5": "^2.3.0",
     "moment": "^2.29.1",
     "node-fetch": "^2.6.1",

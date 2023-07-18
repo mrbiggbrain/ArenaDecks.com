@@ -3,9 +3,9 @@
     <div class="col-12"><hr /></div>
   </div>
   <div class="row gy-2 gx-2">
-    {% for card in deck.zones.deck %}
+    {% for card in deck.zones.Deck.Cards %}
     <div class="col-md-2">
-      <a href="{{card.details.scryfall_uri}}" target="_blank" ><img class="img-fluid card-zoom" src='{{card.details.image_uris.normal}}' data-bs-toggle="tooltip" title="{{card.details.name}} (x{{card.count}})" /></a>
+      <a href="{{card.card.ScryfallURI}}" target="_blank" ><img class="img-fluid card-zoom" src='{{card.card.ImageURIs.normal}}' data-bs-toggle="tooltip" title="{{card.card.Name}} (x{{card.count}})" /></a>
     </div>
     {% endfor %}
   </div>

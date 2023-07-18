@@ -9,7 +9,7 @@
 <div class="row">
   <!-- Preview View -->
   <div class="col-sm-8 text-center" style="padding-right:20px; border-right: 1px solid #ccc;">
-    <h3>{{ name }}</h3>
+    <h3>{{ deck.name }}</h3>
     <div>
       {%if deck.colors.white %}<i class="ms ms-w ms-cost" data-deck-name="{{deck.id}}" data-search-color="W"></i>{%endif%} {%if deck.colors.blue %}<i class="ms ms-u ms-cost" data-deck-name="{{deck.id}}" data-search-color="U"></i>{%endif%} {%if deck.colors.black %}<i class="ms ms-b ms-cost" data-deck-name="{{deck.id}}" data-search-color="B"></i>{%endif%} {%if deck.colors.red %}<i class="ms ms-r ms-cost" data-deck-name="{{deck.id}}" data-search-color="R"></i>{%endif%} {%if deck.colors.green %}<i class="ms ms-g ms-cost" data-deck-name="{{deck.id}}" data-search-color="G"></i>{%endif%}
     </div>
@@ -22,10 +22,10 @@
         </div>
         <div class="col-sm-8">
           <div class="container">
-            {% if gates.commander %}
+            {% if deck.zones.Commander.Used %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Commander ({{ cardcount.commander }})</b>
+                <b>Commander ({{ deck.zones.Commander.Size }})</b>
                 <hr>
               </div>
             </div>
@@ -34,9 +34,9 @@
                 <div class=container">
                   <div class="row gx-1">
                     <!-- Loop through cards -->
-                    {% for card in deck.zones.commander %}
+                    {% for card in deck.zones.commander.Cards %}
                     <div class="col-md-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.card.ScryfallUri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.card.Rarity }}" data-image-url="{{card.card.ImageURIs.normal}}" data-card-colors="{{card.card.Colors}}" target="_blank" rel="noopener noreferrer">{{card.card.Name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
@@ -46,10 +46,10 @@
             {% endif %}
 
             <!-- Companion Display -->
-            {% if gates.companion %}
+            {% if deck.zones.Companion.Used %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Companion ({{ cardcount.companion }})</b>
+                <b>Companion ({{ deck.zones.Companion.Size }})</b>
                 <hr>
               </div>
             </div>
@@ -58,9 +58,9 @@
                 <div class=container">
                   <div class="row gx-1">
                     <!-- Loop through cards -->
-                    {% for card in deck.zones.companion %}
+                    {% for card in deck.zones.Companion.Cards %}
                     <div class="col-md-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.card.ScryfallUri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.card.Rarity }}" data-image-url="{{card.card.ImageURIs.normal}}" data-card-colors="{{card.card.Colors}}" target="_blank" rel="noopener noreferrer">{{card.card.Name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
@@ -70,10 +70,11 @@
             {% endif %}
 
             <!-- Deck Display -->
-            {% if gates.deck %}
+            {% if deck.zones.Deck.Used %}
             <div class="row">
+
               <div class="col-12 py-0">
-                <b>Deck ({{ cardcount.deck }})</b>
+                <b>Deck ({{ deck.zones.Deck.Size }})</b>
                 <hr>
               </div>
             </div>
@@ -82,9 +83,9 @@
                 <div class=container">
                   <div class="row gx-1">
                     <!-- Loop through cards -->
-                    {% for card in deck.zones.deck %}
+                    {% for card in deck.zones.Deck.Cards %}
                     <div class="col-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.card.ScryfallUri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.card.Rarity }}" data-image-url="{{card.card.ImageURIs.normal}}" data-card-colors="{{card.card.Colors}}" target="_blank" rel="noopener noreferrer">{{card.card.Name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
@@ -94,10 +95,10 @@
             {% endif %}
 
             <!-- Sideboard Display -->
-            {% if gates.sideboard %}
+            {% if deck.zones.Sideboard.Used %}
             <div class="row">
               <div class="col-12 py-0">
-                <b>Sideboard ({{ cardcount.sideboard }})</b>
+                <b>Sideboard ({{ deck.zones.Sideboard.Size }})</b>
                 <hr>
               </div>
             </div>
@@ -106,9 +107,9 @@
                 <div class=container">
                   <div class="row gx-1">
                     <!-- Loop through cards -->
-                    {% for card in deck.zones.sideboard %}
+                    {% for card in deck.zones.Sideboard.Cards %}
                     <div class="col-md-6">
-                      {{card.count}} <a href="{{ card.details.scryfall_uri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.details.rarity }}" data-image-url="{{card.details.image_uris.normal}}" data-card-colors="{{card.details.colors}}" target="_blank" rel="noopener noreferrer">{{card.details.name}}</a><br>
+                      {{card.count}} <a href="{{ card.card.ScryfallUri }}" data-deck-name="{{ deck.id }}" data-card-rarity="{{ card.card.Rarity }}" data-image-url="{{card.card.ImageURIs.normal}}" data-card-colors="{{card.card.Colors}}" target="_blank" rel="noopener noreferrer">{{card.card.Name}}</a><br>
                     </div>
                     {% endfor %}
                   </div>
@@ -129,7 +130,7 @@
                     <path fill-rule="evenodd" d="M7.779.052a.5.5 0 0 1 .442 0l6.015 2.97a.5.5 0 0 1 .267.34l1.485 6.676a.5.5 0 0 1-.093.415l-4.162 5.354a.5.5 0 0 1-.395.193H4.662a.5.5 0 0 1-.395-.193L.105 10.453a.5.5 0 0 1-.093-.415l1.485-6.676a.5.5 0 0 1 .267-.34L7.779.053z"></path>
                   </svg>
                 </div>
-                <b>{{wildcards.mythic}}</b>
+                <b>{{deck.wildcards.mythic}}</b>
               </div>
               <div class="col-3">
                 <div data-bs-toggle="tooltip" title="Rare" data-card-rarity="rare" data-deck-name="{{ deck.id }}">
@@ -137,7 +138,7 @@
                     <path fill-rule="evenodd" d="M7.779.052a.5.5 0 0 1 .442 0l6.015 2.97a.5.5 0 0 1 .267.34l1.485 6.676a.5.5 0 0 1-.093.415l-4.162 5.354a.5.5 0 0 1-.395.193H4.662a.5.5 0 0 1-.395-.193L.105 10.453a.5.5 0 0 1-.093-.415l1.485-6.676a.5.5 0 0 1 .267-.34L7.779.053z"></path>
                   </svg>
                 </div>
-                <b>{{wildcards.rare}}</b>
+                <b>{{deck.wildcards.rare}}</b>
               </div>
               <div class="col-3">
                 <div data-bs-toggle="tooltip" title="Uncommon" data-card-rarity="uncommon" data-deck-name="{{ deck.id }}">
@@ -145,7 +146,7 @@
                     <path fill-rule="evenodd" d="M7.779.052a.5.5 0 0 1 .442 0l6.015 2.97a.5.5 0 0 1 .267.34l1.485 6.676a.5.5 0 0 1-.093.415l-4.162 5.354a.5.5 0 0 1-.395.193H4.662a.5.5 0 0 1-.395-.193L.105 10.453a.5.5 0 0 1-.093-.415l1.485-6.676a.5.5 0 0 1 .267-.34L7.779.053z"></path>
                   </svg>
                 </div>
-                <b>{{wildcards.uncommon}}</b>
+                <b>{{deck.wildcards.uncommon}}</b>
               </div>
               <div class="col-3">
                 <div data-bs-toggle="tooltip" title="Common" data-card-rarity="common" data-deck-name="{{ deck.id }}">
@@ -153,7 +154,7 @@
                     <path fill-rule="evenodd" d="M7.779.052a.5.5 0 0 1 .442 0l6.015 2.97a.5.5 0 0 1 .267.34l1.485 6.676a.5.5 0 0 1-.093.415l-4.162 5.354a.5.5 0 0 1-.395.193H4.662a.5.5 0 0 1-.395-.193L.105 10.453a.5.5 0 0 1-.093-.415l1.485-6.676a.5.5 0 0 1 .267-.34L7.779.053z"></path>
                   </svg>
                 </div>
-                <b>{{wildcards.common}}</b>
+                <b>{{deck.wildcards.common}}</b>
               </div>
             </div>
           </div>

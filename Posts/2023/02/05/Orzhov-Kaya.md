@@ -30,7 +30,7 @@ Sideboard
 2 Calamity's Wake (BRO) 4
 2 Leyline of the Void (M20) 107
 3 Pithing Needle (MID) 257
-3 Dusk /// Dawn (AKR) 16
+3 Dusk // Dawn (AKR) 16
 2 Ratchet Bomb (SOM) 196
 3 Declaration in Stone (SOI) 12
 {%enddeck%}

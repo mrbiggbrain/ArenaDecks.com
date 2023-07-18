@@ -17,7 +17,7 @@ Deck
 4 Grateful Apparition (WAR) 17
 4 Wanderer's Strike (WAR) 38
 2 Fade from History (BRO) 177
-2 Dusk /// Dawn (AKR) 16
+2 Dusk // Dawn (AKR) 16
 4 Luminarch Aspirant (ZNR) 24
 4 Karn's Bastion (WAR) 248
 4 Branchloft Pathway (ZNR) 258
@@ -30,7 +30,7 @@ Sideboard
 3 Unlicensed Hearse (SNC) 246
 1 Banishing Light (THB) 4
 2 Fade from History (BRO) 177
-2 Dusk /// Dawn (AKR) 16
+2 Dusk // Dawn (AKR) 16
 2 Banishing Light (THB) 4
 2 Sungold Sentinel (MID) 37
 {%enddeck%}
